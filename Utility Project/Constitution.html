@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"6a0f9ff2bc",applicationID:"248966996"};;/*! For license information please see nr-loader-rum-1.256.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={234:(e,t,r)=>{"use strict";r.d(t,{P_:()=>v,Mt:()=>b,C5:()=>s,OP:()=>k,lF:()=>N,Yu:()=>_,Dg:()=>m,CX:()=>c,GE:()=>w,sU:()=>R});var n=r(8632),i=r(9567);const o={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o);const r=(0,n.ek)(e);r&&(r.info=a[e])}const u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(7056),l=r(50);const f="[data-nr-mask]",g=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{feature_flags:[],proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,l.Z)("An invalid session_replay.mask_selector was provided. '*' will be used.",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},soft_navigations:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},p={},h="All configuration objects require an agent identifier!";function v(e){if(!e)throw new Error(h);if(!p[e])throw new Error("Configuration for ".concat(e," was never set"));return p[e]}function m(e,t){if(!e)throw new Error(h);p[e]=(0,i.D)(t,g());const r=(0,n.ek)(e);r&&(r.init=p[e])}function b(e,t){if(!e)throw new Error(h);var r=v(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const y={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A={};function w(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");A[e]=(0,i.D)(t,y);const r=(0,n.ek)(e);r&&(r.loader_config=A[e])}const _=(0,n.mF)().o;var E=r(385),x=r(6818);const D={buildEnv:x.Re,customTransaction:void 0,disabled:!1,distMethod:x.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(E._A?.performance?.timeOrigin||E._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+E._A.location,ptid:void 0,releaseIds:{},appMetadata:{},session:void 0,xhrWrappable:"function"==typeof E._A.XMLHttpRequest?.prototype?.addEventListener,version:x.q4,denyList:void 0,harvestCount:0,timeKeeper:void 0},S={};function k(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!S[e])throw new Error("Runtime for ".concat(e," was never set"));return S[e]}function R(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");S[e]=(0,i.D)(t,D);const r=(0,n.ek)(e);r&&(r.runtime=S[e])}function N(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{"use strict";r.d(t,{Re:()=>i,gF:()=>o,q4:()=>n});const n="1.256.0",i="PROD",o="CDN"},385:(e,t,r)=>{"use strict";r.d(t,{Nk:()=>d,Tt:()=>s,_A:()=>o,cv:()=>l,iS:()=>a,il:()=>n,ux:()=>c,v6:()=>i,w1:()=>u});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=Boolean("hidden"===o?.document?.visibilityState),s=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),c=s&&"undefined"==typeof SharedWorker,u=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Boolean(n&&window.document.documentMode)),d=!!o.navigator?.sendBeacon,l=Math.floor(Date.now()-performance.now())},1117:(e,t,r)=>{"use strict";r.d(t,{w:()=>o});var n=r(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occurred while setting SharedContext",e)}}}},8e3:(e,t,r)=>{"use strict";r.d(t,{LP:()=>l,RP:()=>c,o5:()=>u});var n=r(8325),i=r(1284),o=r(4322),a=r(3325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};d(e),s[e].get(t)||s[e].set(t,r)}function u(e,t){d(e),s[e].get(t)&&s[e].delete(t),s[e].size&&f(e)}function d(e){if(!e)throw new Error("agentIdentifier required");s[e]||(s[e]=new Map)}function l(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature",r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if(d(e),!e||!s[e].get(t)||r)return g(e,t);s[e].get(t).staged=!0,f(e)}function f(e){const t=[...s[e]];t.every((e=>{let[t,r]=e;return r.staged}))&&(t.sort(((e,t)=>e[1].priority-t[1].priority)),t.forEach((t=>{let[r]=t;s[e].delete(r),g(e,r)})))}function g(e,t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)p(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}r.isolatedBacklog||delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}function p(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},8325:(e,t,r)=>{"use strict";r.d(t,{A:()=>c,ee:()=>u});var n=r(8632),i=r(2210),o=r(234);class a{constructor(e){this.contextId=e}}var s=r(3117);const c="nr@context:".concat(s.a),u=function e(t,r){var n={},s={},d={},l=!1;try{l=16===r.length&&(0,o.OP)(r).isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=g(n),c=h(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var p=m()[s[e]];p&&p.push([f,e,r,a]);return a},get:v,listeners:h,context:g,buffer:function(e,t){const r=m();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach((e=>{delete f.backlog[e]}))},isBuffering:function(e){return!!m()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a?e:e?(0,i.X)(e,c,(()=>new a(c))):new a(c)}function p(e,t){n[e]=h(e).concat(t)}function h(e){return n[e]||[]}function v(t){return d[t]=d[t]||e(f,t)}function m(){return f.backlog}}(void 0,"globalEE"),d=(0,n.fP)();d.ee||(d.ee=u)},5546:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(8325).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=r(5546);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3239:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},3117:(e,t,r)=>{"use strict";r.d(t,{a:()=>n});const n=(0,r(4402).Rl)()},4402:(e,t,r)=>{"use strict";r.d(t,{Rl:()=>a,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,i++).toString(16));return a.join("")}},7056:(e,t,r)=>{"use strict";r.d(t,{Bq:()=>n,Hb:()=>a,IK:()=>u,K4:()=>i,oD:()=>o,uT:()=>c,wO:()=>s});const n="NRBA",i="SESSION",o=144e5,a=18e5,s={PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},7894:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{z:()=>n})},50:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2825:(e,t,r)=>{"use strict";r.d(t,{N:()=>c,T:()=>s});var n=r(8325),i=r(385);const o="newrelic";const a=new Set,s={};function c(e,t){const r=n.ee.get(t);s[t]??={},e&&"object"==typeof e&&(a.has(t)||(r.emit("rumresp",[e]),s[t]=e,a.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{i._A.dispatchEvent(new CustomEvent(o,{detail:e}))}catch(e){}}({loaded:!0})))}},2210:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,r)=>{"use strict";r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{"use strict";r.d(t,{P:()=>o});var n=r(8325);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{"use strict";r.d(t,{KB:()=>a,b2:()=>o});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>d,ce:()=>o,ek:()=>u,fP:()=>a,gG:()=>l,h5:()=>c,mF:()=>s});var n=r(385),i=r(7894);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return n._A.NREUM||(n._A.NREUM={}),void 0===n._A.newrelic&&(n._A.newrelic=n._A.NREUM),n._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:n._A.setTimeout,SI:n._A.setImmediate,CT:n._A.clearTimeout,XHR:n._A.XMLHttpRequest,REQ:n._A.Request,EV:n._A.Event,PR:n._A.Promise,MO:n._A.MutationObserver,FETCH:n._A.fetch}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,i.z)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=a();return t.initializedAgents?.[e]}function d(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,r)=>{"use strict";r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},3081:(e,t,r)=>{"use strict";r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},7633:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewEvent},9251:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},7144:(e,t,r)=>{"use strict";r.d(t,{Ef:()=>i});var n=r(7056);r(3325).D.sessionReplay;const i={RECORD:"recordReplay",PAUSE:"pauseReplay",REPLAY_RUNNING:"replayRunning"};n.IK.ERROR,n.IK.FULL,n.IK.OFF},5938:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(8325);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},2758:(e,t,r)=>{"use strict";r.d(t,{j:()=>E});var n=r(3325),i=r(234),o=r(5546),a=r(8325),s=r(8e3),c=r(3960),u=r(385),d=r(50),l=r(3081),f=r(8632),g=r(7144);const p=["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start","recordReplay","pauseReplay",g.Ef.RECORD,g.Ef.PAUSE],h=["setErrorHandler","finished","addToTrace","addRelease"];var v=r(7894),m=r(7056);function b(){const e=(0,f.gG)();p.forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...n))})),o.length>1?o:o[0]}(t,...n)}}))}const y={};var A=r(2825);const w=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let _=!1;function E(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},p=arguments.length>2?arguments[2]:void 0,E=arguments.length>3?arguments[3]:void 0,{init:x,info:D,loader_config:S,runtime:k={loaderType:p},exposed:R=!0}=t;const N=(0,f.gG)();D||(x=N.init,D=N.info,S=N.loader_config),(0,i.Dg)(e.agentIdentifier,x||{}),(0,i.GE)(e.agentIdentifier,S||{}),D.jsAttributes??={},u.v6&&(D.jsAttributes.isWorker=!0),(0,i.CX)(e.agentIdentifier,D);const P=(0,i.P_)(e.agentIdentifier),j=[D.beacon,D.errorBeacon];_||(P.proxy.assets&&(w(P.proxy.assets),j.push(P.proxy.assets)),P.proxy.beacon&&j.push(P.proxy.beacon),b(),(0,f.EZ)("activatedFeatures",A.T),e.runSoftNavOverSpa&&=!0===P.soft_navigations.enabled&&P.feature_flags.includes("soft_nav")),k.denyList=[...P.ajax.deny_list||[],...P.ajax.block_internal?j:[]],k.ptid=e.agentIdentifier,(0,i.sU)(e.agentIdentifier,k),void 0===e.api&&(e.api=function(e,t){let f=arguments.length>2&&void 0!==arguments[2]&&arguments[2];t||(0,s.RP)(e,"api");const p={};var b=a.ee.get(e),A=b.get("tracer");y[e]=m.IK.OFF,b.on(g.Ef.REPLAY_RUNNING,(t=>{y[e]=t}));var w="api-",_=w+"ixn-";function E(t,r,n,o){const a=(0,i.C5)(e);return null===r?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),S(w,n,!0,o||null===r?"session":void 0)(t,r)}function x(){}h.forEach((e=>{p[e]=S(w,e,!0,"api")})),p.addPageAction=S(w,"addPageAction",!0,n.D.pageAction),p.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,S(w,"setPageViewName",!0)()},p.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return E(e,t,"setCustomAttribute",r);(0,d.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t,"> was provided."))}else(0,d.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},p.setUserId=function(e){if("string"==typeof e||null===e)return E("enduser.id",e,"setUserId",!0);(0,d.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},p.setApplicationVersion=function(e){if("string"==typeof e||null===e)return E("application.version",e,"setApplicationVersion",!1);(0,d.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},p.start=e=>{try{const t=e?"defined":"undefined";(0,o.p)(l.xS,["API/start/".concat(t,"/called")],void 0,n.D.metrics,b);const r=Object.values(n.D);if(void 0===e)e=r;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!r.includes(e))))return(0,d.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(r));e.includes(n.D.pageViewEvent)||e.push(n.D.pageViewEvent)}e.forEach((e=>{b.emit("".concat(e,"-opt-in"))}))}catch(e){(0,d.Z)("An unexpected issue occurred",e)}},p[g.Ef.RECORD]=function(){(0,o.p)(l.xS,["API/recordReplay/called"],void 0,n.D.metrics,b),(0,o.p)(g.Ef.RECORD,[],void 0,n.D.sessionReplay,b)},p[g.Ef.PAUSE]=function(){(0,o.p)(l.xS,["API/pauseReplay/called"],void 0,n.D.metrics,b),(0,o.p)(g.Ef.PAUSE,[],void 0,n.D.sessionReplay,b)},p.interaction=function(e){return(new x).get("object"==typeof e?e:{})};const D=x.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(l.xS,["API/createTracer/called"],void 0,n.D.metrics,b),f||(0,o.p)(_+"tracer",[(0,v.z)(),e,r],i,n.D.spa,b),function(){if(A.emit((a?"":"no-")+"fn-start",[(0,v.z)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){throw A.emit("fn-err",[arguments,this,e],r),e}finally{A.emit("fn-end",[(0,v.z)()],r)}}}};function S(e,t,r,i){return function(){return(0,o.p)(l.xS,["API/"+t+"/called"],void 0,n.D.metrics,b),i&&(0,o.p)(e+t,[(0,v.z)(),...arguments],r?null:this,i,b),r?void 0:this}}function k(){r.e(75).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,s.LP)(e,"api")})).catch((()=>{(0,d.Z)("Downloading runtime APIs failed..."),b.abort()}))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{D[e]=S(_,e,void 0,f?n.D.softNav:n.D.spa)})),p.setCurrentRouteName=f?S(_,"routeName",void 0,n.D.softNav):S(w,"routeName",!0,n.D.spa),p.noticeError=function(t,r){"string"==typeof t&&(t=new Error(t)),(0,o.p)(l.xS,["API/noticeError/called"],void 0,n.D.metrics,b),(0,o.p)("err",[t,(0,v.z)(),!1,r,!!y[e]],void 0,n.D.jserrors,b)},u.il?(0,c.b2)((()=>k()),!0):k(),p}(e.agentIdentifier,E,e.runSoftNavOverSpa)),void 0===e.exposed&&(e.exposed=R),_=!0}},8993:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},3325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.softNav]:9,[n.sessionReplay]:10}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>"nr-rum-1.256.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.256.0.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}if(!s){c=!0;var f={75:"sha512-VqhskOJRfbcFG9m19QquamS1EY5lDYVUmAr9WEHghoYMBmoPSmX+wRWDluhmTyJ76y949VbwjczMC7zuJGPp/Q=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var g=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=g.bind(null,s.onerror),s.onload=g.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={50:0,832:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.256.0.PROD"]=self["webpackChunk:NRBA-1.256.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8993);var e=i(50),t=i(7144),r=i(4402);class n{agentIdentifier;constructor(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:(0,r.ky)(16);this.agentIdentifier=e}#e(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];if("function"==typeof this.api?.[t])return this.api[t](...n);(0,e.Z)("Call to agent api ".concat(t," failed. The API is not currently initialized."))}addPageAction(e,t){return this.#e("addPageAction",e,t)}setPageViewName(e,t){return this.#e("setPageViewName",e,t)}setCustomAttribute(e,t,r){return this.#e("setCustomAttribute",e,t,r)}noticeError(e,t){return this.#e("noticeError",e,t)}setUserId(e){return this.#e("setUserId",e)}setApplicationVersion(e){return this.#e("setApplicationVersion",e)}setErrorHandler(e){return this.#e("setErrorHandler",e)}finished(e){return this.#e("finished",e)}addRelease(e,t){return this.#e("addRelease",e,t)}start(e){return this.#e("start",e)}recordReplay(){return this.#e(t.Ef.RECORD)}pauseReplay(){return this.#e(t.Ef.PAUSE)}addToTrace(e){return this.#e("addToTrace",e)}setCurrentRouteName(e){return this.#e("setCurrentRouteName",e)}interaction(){return this.#e("interaction")}}var o=i(3325),a=i(234);const s=Object.values(o.D);function c(e){const t={};return s.forEach((r=>{t[r]=function(e,t){return!0===(0,a.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var u=i(2758);var d=i(8e3),l=i(5938),f=i(3960),g=i(385);const p=e=>g.il&&!0===(0,a.Mt)(e,"privacy.cookies_enabled");function h(e){return a.Yu.MO&&p&&!0===(0,a.Mt)(e,"session_trace.enabled")}class v extends l.W{constructor(e,t,r){let n=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=n,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,a.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,d.RP)(e,r)}importAggregator(){let t,r=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,d.RP)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));this.onAggregateImported=new Promise((e=>{t=e}));const n=async()=>{let n;try{if(p(this.agentIdentifier)){const{setupAgentSession:e}=await i.e(75).then(i.bind(i,3108));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t),this.featureName===o.D.sessionReplay&&this.abortHandler?.()}try{if(!this.#t(this.featureName,n))return(0,d.LP)(this.agentIdentifier,this.featureName),void t(!1);const{lazyFeatureLoader:e}=await i.e(75).then(i.bind(i,8582)),{Aggregate:o}=await e(this.featureName,"aggregate");this.featAggregate=new o(this.agentIdentifier,this.aggregator,r),t(!0)}catch(r){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),r),this.abortHandler?.(),(0,d.LP)(this.agentIdentifier,this.featureName,!0),t(!1),this.ee&&this.ee.abort()}};g.il?(0,f.b2)((()=>n()),!0):n()}#t(e,t){return e!==o.D.sessionReplay||(r=this.agentIdentifier,n=t,!(!h(r)||!n?.isNew&&!n?.state.sessionReplayMode));var r,n}}var m=i(7633);class b extends v{static featureName=m.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,m.t,r),this.importAggregator()}}var y=i(1117),A=i(1284);class w extends y.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,A.D)(e,(function(e,r){t[e]=_(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,A.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=_(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=E(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=_(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=Object.values(this.aggregatedData[r]||{}),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function _(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=E(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function E(e){return{t:e,min:e,max:e,sos:e*e,c:1}}var x=i(8632),D=i(4351);var S=i(5546),k=i(7956),R=i(3239),N=i(9251),P=i(7894);class j extends v{static featureName=N.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,N.t,r),g.il&&((0,k.N)((()=>(0,S.p)("docHidden",[(0,P.z)()],void 0,N.t,this.ee)),!0),(0,R.bP)("pagehide",(()=>(0,S.p)("winPagehide",[(0,P.z)()],void 0,N.t,this.ee))),this.importAggregator())}}var I=i(3081);class T extends v{static featureName=I.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,I.t9,r),this.importAggregator()}}new class extends n{constructor(t,r){super(r),g._A?(this.sharedAggregator=new w({agentIdentifier:this.agentIdentifier}),this.features={},(0,x.h5)(this.agentIdentifier,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(b),this.runSoftNavOverSpa=[...this.desiredFeatures].some((e=>e.featureName===o.D.softNav)),(0,u.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.Z)("Failed to initialize the agent. Could not determine the runtime environment.")}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}run(){try{const t=c(this.agentIdentifier),r=[...this.desiredFeatures];r.sort(((e,t)=>o.p[e.featureName]-o.p[t.featureName])),r.forEach((r=>{if(!t[r.featureName]&&r.featureName!==o.D.pageViewEvent)return;if(this.runSoftNavOverSpa&&r.featureName===o.D.spa)return;if(!this.runSoftNavOverSpa&&r.featureName===o.D.softNav)return;const n=function(e){switch(e){case o.D.ajax:return[o.D.jserrors];case o.D.sessionTrace:return[o.D.ajax,o.D.pageViewEvent];case o.D.sessionReplay:return[o.D.sessionTrace];case o.D.pageViewTiming:return[o.D.pageViewEvent];default:return[]}}(r.featureName);n.every((e=>e in this.features))||(0,e.Z)("".concat(r.featureName," is enabled but one or more dependent features has not been initialized (").concat((0,D.P)(n),"). This may cause unintended consequences or missing data...")),this.features[r.featureName]=new r(this.agentIdentifier,this.sharedAggregator)}))}catch(t){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,x.fP)();delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return r.ee.get(this.agentIdentifier).abort(),!1}}}({features:[b,j,T],loaderType:"lite"})})()})();</script>
+			<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+		<link rel="profile" href="https://gmpg.org/xfn/11">
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M6NQD8');</script>
+    <!-- End Google Tag Manager -->
+    
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700,600italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    
+    
+    <link href= 'https://dudbm6bcnmy8e.cloudfront.net/cwru/fonts/Arizona-Fonts/arizona' rel='stylesheet' type='text/css'>
+    
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-83752054-1', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+
+
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v19.7.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>University News |</title>
+	<link rel="canonical" href="https://thedaily.case.edu/university-news/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="University News |" />
+	<meta property="og:url" content="https://thedaily.case.edu/university-news/" />
+	<meta property="og:site_name" content="The Daily" />
+	<meta property="article:publisher" content="https://www.facebook.com/casewesternreserve/" />
+	<meta property="article:modified_time" content="2016-09-02T19:26:28+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@cwru" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://thedaily.case.edu/university-news/","url":"https://thedaily.case.edu/university-news/","name":"University News |","isPartOf":{"@id":"https://thedaily.case.edu/#website"},"datePublished":"2016-07-20T15:28:42+00:00","dateModified":"2016-09-02T19:26:28+00:00","breadcrumb":{"@id":"https://thedaily.case.edu/university-news/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://thedaily.case.edu/university-news/"]}]},{"@type":"BreadcrumbList","@id":"https://thedaily.case.edu/university-news/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://thedaily.case.edu/"},{"@type":"ListItem","position":2,"name":"University News"}]},{"@type":"WebSite","@id":"https://thedaily.case.edu/#website","url":"https://thedaily.case.edu/","name":"The Daily","description":"Case Western Reserve University","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://thedaily.case.edu/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//thedaily.case.edu' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="The Daily &raquo; Feed" href="https://thedaily.case.edu/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Daily &raquo; Comments Feed" href="https://thedaily.case.edu/comments/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/thedaily.case.edu\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2.2"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){p.clearRect(0,0,i.width,i.height),p.fillText(e,0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(t,0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s("\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!s("\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!s("\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!s("\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='stec-widget-events-list-css' href='https://thedaily.case.edu/wp-content/plugins/stachethemes_event_calendar/assets/css/front/style.widget-events.min.css?ver=3.2.4' type='text/css' media='all' />
+<link rel="preload" href="https://thedaily.case.edu/wp-content/plugins/stachethemes_event_calendar/assets/css/fonts/css/all.min.css?ver=3.2.4" as="style" onload="this.rel='stylesheet';" media="all"><link rel='stylesheet' id='sbi_styles-css' href='https://thedaily.case.edu/wp-content/plugins/instagram-feed/css/sbi-styles.min.css?ver=6.0.8' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://thedaily.case.edu/wp-includes/css/dist/block-library/style.min.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://thedaily.case.edu/wp-includes/css/classic-themes.min.css?ver=6.2.2' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='codetipi-15zine-style-css' href='https://thedaily.case.edu/wp-content/themes/15zine/assets/css/style.min.css?ver=3.3.9.8' type='text/css' media='all' />
+<style id='codetipi-15zine-style-inline-css' type='text/css'>
+.link-color-wrap > * > a,.link-color-wrap > * > ul a{ color: #1e1e1e;}.link-color-wrap > * > a:hover,.link-color-wrap > * > ul a:hover{ color: #555;}body{ color: #2e2e2e;}.site-footer{ color: #fff;}body{font-size:14px;font-weight:400;line-height:1.6;text-transform:none;}.excerpt{font-size:14px;font-weight:400;line-height:1.6;text-transform:none;}.preview-thumbnail .title, .preview-review .title{font-size:14px;font-weight:700;letter-spacing:0.1em;line-height:1.3;text-transform:uppercase;}.byline{font-size:10px;font-weight:700;letter-spacing:0.1em;line-height:1.3;text-transform:uppercase;}.tipi-button, .button__back__home{font-size:14px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;}.breadcrumbs{font-size:11px;font-weight:400;letter-spacing:0.1em;text-transform:none;}.secondary-menu-wrap{font-size:14px;font-weight:700;letter-spacing:0.1em;line-height:1;text-transform:uppercase;}.preview-slider.title-s .title{font-size:14px;font-weight:700;letter-spacing:0.1em;line-height:1.3;text-transform:uppercase;}.preview-slider.title-m .title{font-size:14px;font-weight:700;letter-spacing:0.1em;line-height:1.3;text-transform:uppercase;}.preview-slider.title-l .title{font-size:14px;font-weight:700;letter-spacing:0.1em;line-height:1.3;text-transform:uppercase;}.preview-slider.title-xl .title{font-size:14px;font-weight:700;letter-spacing:0.1em;line-height:1.3;text-transform:uppercase;}.preview-grid.title-s .title{font-size:14px;font-weight:700;letter-spacing:0.1em;line-height:1.3;text-transform:uppercase;}.preview-grid.title-m .title{font-size:14px;font-weight:700;letter-spacing:0.1em;line-height:1.3;text-transform:uppercase;}.preview-grid.title-l .title{font-size:14px;font-weight:700;letter-spacing:0.1em;line-height:1.3;text-transform:uppercase;}.preview-classic .title{font-size:14px;font-weight:700;letter-spacing:0.1em;line-height:1.3;text-transform:uppercase;}.preview-2 .title{font-size:14px;font-weight:700;letter-spacing:0.1em;line-height:1.3;text-transform:uppercase;}.entry-content blockquote, .entry-content .wp-block-pullquote p{font-size:18px;font-weight:400;line-height:1.5;text-transform:none;}.hero-wrap .caption, .gallery-block__wrap .caption{font-size:10px;font-weight:400;line-height:1.2;text-transform:none;}.main-navigation{font-size:14px;font-weight:700;letter-spacing:0.12em;line-height:1;text-transform:uppercase;}.hero-meta.tipi-s-typo .title{font-size:18px;font-weight:700;letter-spacing:0.1em;line-height:1.3;text-transform:uppercase;}.hero-meta.tipi-m-typo .title{font-size:18px;font-weight:700;letter-spacing:0.1em;line-height:1.3;text-transform:uppercase;}.hero-meta.tipi-l-typo .title{font-size:18px;font-weight:700;letter-spacing:0.1em;line-height:1.3;text-transform:uppercase;}.entry-content h1{font-size:18px;font-weight:700;letter-spacing:0.1em;line-height:1.3;text-transform:uppercase;}.entry-content h2{font-size:18px;font-weight:700;letter-spacing:0.1em;line-height:1.3;text-transform:uppercase;}.entry-content h3{font-size:14px;font-weight:700;letter-spacing:0.1em;line-height:1.3;text-transform:uppercase;}.entry-content h4{font-size:14px;font-weight:700;letter-spacing:0.1em;line-height:1.3;text-transform:uppercase;}.entry-content h5{font-size:14px;font-weight:700;letter-spacing:0.1em;line-height:1.3;text-transform:uppercase;}.widget-title{font-size:14px;font-weight:700;letter-spacing:0.1em;line-height:1.3;text-transform:uppercase;}.block-title-wrap .title{font-size:18px;font-weight:700;letter-spacing:0.1em;line-height:1.2;text-transform:uppercase;}.block-subtitle{font-size:15px;font-weight:700;letter-spacing:0.1em;line-height:1.3;text-transform:uppercase;}.preview-classic { padding-bottom: 30px; }.block-wrap-classic .block ~ .block .preview-1:first-child { padding-top: 30px; }.preview-thumbnail { padding-bottom: 20px; }.codetipi-15zine-widget .preview-thumbnail { padding-bottom: 15px; }.preview-classic{ border-bottom:1px dotted #f2f2f2;}.preview-classic { margin-bottom: 30px; }.block-wrap-bs-62 .block ~ .block, .block-wrap-classic .block ~ .block .preview-1:first-child { margin-top: 30px; }.block-wrap-classic .block ~ .block .preview-1:first-child{ border-top:1px dotted #f2f2f2;}.preview-classic { margin-bottom: 30px; }.block-wrap-bs-62 .block ~ .block, .block-wrap-classic .block ~ .block .preview-1:first-child { margin-top: 30px; }.preview-thumbnail{ border-bottom:1px dotted #f2f2f2;}.preview-thumbnail { margin-bottom: 20px; }.codetipi-15zine-widget .preview-thumbnail { margin-bottom: 15px; }.main-menu-logo img { width: 110px; }.mm-submenu-2 .mm-51 .menu-wrap > .sub-menu > li > a { color: #ffffff; }.preview-slider.tile-overlay--1:after, .preview-slider.tile-overlay--2 .meta:after { opacity: 0.25; }.preview-grid.tile-overlay--1:after, .preview-grid.tile-overlay--2 .meta:after { opacity: 1; }.main-navigation-border { border-bottom-color: #bbbbbb; }.cb-mm-on.cb-menu-light #cb-nav-bar .cb-main-nav > li:hover, .cb-mm-on.cb-menu-dark #cb-nav-bar .cb-main-nav > li:hover { background: #ffffff; }body {background-color:#ffffff;}body, #respond, .cb-font-body, .font-b { font-family: 'Raleway',sans-serif; }h1, h2, h3, h4, h5, h6, .cb-font-header, .font-h, #bbp-user-navigation, .cb-byline, .product_meta, .price, .woocommerce-review-link, .cart_item, .cart-collaterals .cart_totals th { font-family: 'Montserrat',sans-serif }.main-menu > li > a, .main-menu-wrap .menu-icons > li > a {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}.secondary-menu-wrap .menu-icons > li > a, .secondary-menu-wrap .secondary-menu > li > a {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}.site-mob-header:not(.site-mob-header-11) .header-padding .logo-main-wrap, .site-mob-header:not(.site-mob-header-11) .header-padding .icons-wrap a, .site-mob-header-11 .header-padding {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}.grid-spacing { border-top-width: 3px; }@media only screen and (min-width: 481px) {.block-wrap-slider:not(.block-wrap-51) .slider-spacing { margin-right: 3px;}.block--feature.block-wrap-slider .block-inner-style { padding-top: 3px;}}@media only screen and (min-width: 768px) {.grid-spacing { border-right-width: 3px; }.block-wrap-55 .slide { margin-right: 3px!important; }.block-wrap-grid:not(.block-wrap-81) .block { width: calc( 100% + 3px ); }.preview-slider.tile-overlay--1:hover:after, .preview-slider.tile-overlay--2.tile-overlay--gradient:hover:after, .preview-slider.tile-overlay--2:hover .meta:after { opacity: 0.75 ; }.preview-grid.tile-overlay--1:hover:after, .preview-grid.tile-overlay--2.tile-overlay--gradient:hover:after, .preview-grid.tile-overlay--2:hover .meta:after { opacity: 0.75 ; }}@media only screen and (min-width: 1020px) {.site-header .header-padding {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}body{font-size:18px;}.excerpt{font-size:16px;}.tipi-button, .button__back__home{font-size:12px;}.secondary-menu-wrap{font-size:12px;}.preview-slider.title-s .title{font-size:16px;}.preview-slider.title-m .title{font-size:16px;}.preview-slider.title-l .title{font-size:32px;}.preview-slider.title-xl .title{font-size:38px;}.preview-grid.title-s .title{font-size:16px;}.preview-grid.title-m .title{font-size:16px;}.preview-grid.title-l .title{font-size:32px;}.preview-classic .title{font-size:20px;}.preview-2 .title{font-size:22px;}.entry-content blockquote, .entry-content .wp-block-pullquote p{font-size:30px;}.main-navigation{font-size:16px;}.hero-meta.tipi-s-typo .title{font-size:30px;}.hero-meta.tipi-m-typo .title{font-size:40px;}.hero-meta.tipi-l-typo .title{font-size:50px;}.entry-content h1{font-size:50px;}.entry-content h2{font-size:30px;}.entry-content h3{font-size:24px;}.entry-content h4{font-size:20px;}.entry-content h5{font-size:18px;}.widget-title{font-size:20px;}.block-title-wrap .title{font-size:36px;}}
+</style>
+<link rel='stylesheet' id='codetipi-15zine-fonts-css' href='https://fonts.googleapis.com/css?family=Montserrat%3A400%2C700%7CRaleway%3A400%2C700&#038;display=swap' type='text/css' media='all' />
+<!--[if IE]>
+<link rel='stylesheet' id='codetipi-15zine-ie9-css' href='https://thedaily.case.edu/wp-content/themes/15zine/assets/css/ie.css?ver=3.3.9.8' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='swipebox-css' href='https://thedaily.case.edu/wp-content/themes/15zine/assets/css/swipebox.min.css?ver=1.4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css' href='https://thedaily.case.edu/wp-content/themes/15zine/assets/fonts/fontawesome/css/fontawesome.min.css?ver=3.3.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-regular-css' href='https://thedaily.case.edu/wp-content/themes/15zine/assets/fonts/fontawesome/css/regular.min.css?ver=3.3.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-solid-css' href='https://thedaily.case.edu/wp-content/themes/15zine/assets/fonts/fontawesome/css/solid.min.css?ver=3.3.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='upw_theme_standard-css' href='https://thedaily.case.edu/wp-content/plugins/ultimate-posts-widget/css/upw-theme-standard.min.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-style-css' href='https://thedaily.case.edu/wp-content/themes/15zine-child/assets/css/style.css?ver=1.0' type='text/css' media='all' />
+<script type='text/javascript' src='https://thedaily.case.edu/wp-includes/js/jquery/jquery.min.js?ver=3.6.4' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://thedaily.case.edu/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="https://thedaily.case.edu/wp-json/" /><link rel="alternate" type="application/json" href="https://thedaily.case.edu/wp-json/wp/v2/pages/51109" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://thedaily.case.edu/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://thedaily.case.edu/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.2.2" />
+<link rel='shortlink' href='https://thedaily.case.edu/?p=51109' />
+<link rel="alternate" type="application/json+oembed" href="https://thedaily.case.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthedaily.case.edu%2Funiversity-news%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://thedaily.case.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthedaily.case.edu%2Funiversity-news%2F&#038;format=xml" />
+<link rel="alternate" type="application/feed+json" title="The Daily &raquo; JSON Feed" href="https://thedaily.case.edu/feed/json/" />
+        <script type='text/javascript'>
+            if (typeof ajaxurl === 'undefined') {
+                var ajaxurl = 'https://thedaily.case.edu/wp-admin/admin-ajax.php';
+            }
+            if (typeof resturl === 'undefined') {
+                var resturl = 'https://thedaily.case.edu/wp-json/';
+            }
+        </script>
+        <meta name="framework" content="Redux 4.3.9" /><link rel="preload" type="font/woff2" as="font" href="https://thedaily.case.edu/wp-content/themes/15zine/assets/css/15zine/codetipi-15zine.woff2?9oa0lg" crossorigin><link rel="preload" type="font/woff2" as="font" href="https://thedaily.case.edu/wp-content/themes/15zine/assets/fonts/fontawesome/webfonts/fa-regular-400.woff2?v=5.9.0" crossorigin><link rel="preload" type="font/woff2" as="font" href="https://thedaily.case.edu/wp-content/themes/15zine/assets/fonts/fontawesome/webfonts/fa-solid-900.woff2?v=5.9.0" crossorigin><link rel="dns-prefetch" href="//fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style><link rel="icon" href="https://thedaily.case.edu/wp-content/uploads/2023/06/favicon.png" sizes="32x32" />
+<link rel="icon" href="https://thedaily.case.edu/wp-content/uploads/2023/06/favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://thedaily.case.edu/wp-content/uploads/2023/06/favicon.png" />
+<meta name="msapplication-TileImage" content="https://thedaily.case.edu/wp-content/uploads/2023/06/favicon.png" />
+		<style type="text/css" id="wp-custom-css">
+			.link-color-wrap > * > a, .link-color-wrap > * > ul a {
+    color: #006DA3;
+}
+.single-post .post-wrap{
+	padding-top: 0px;
+}
+.post .hero{
+	display:block;
+}
+
+@media only screen and (min-width: 1200px){
+.single-post .title-beneath .hero-wrap+.meta-wrap{
+	padding-top: 0px;
+}
+	.single-post .title-beneath .hero-wrap .hero{
+	margin-bottom: 20px;
+}
+}
+.entry-content ul{
+	list-style: disc !important;
+	list-style-type: disc !important;
+	    margin-left: 45px
+}
+.entry-content ol{
+	margin-left: 45px;
+	list-style-position: unset;
+}
+.entry-content ul li, .entry-content ol li{
+	padding-left: 14px;
+}
+
+
+.hero-meta .cb-byline{
+   display: block;
+}
+.hero-meta .title-wrap+.byline {
+    margin-top: 0px;
+}
+.article-layout-1 .site-main {
+    padding-top: 0px;
+}
+.article-layout-1 .site-main article:first-child .meta-wrap h1.entry-title {
+        margin-top: 0px;
+}
+.hero-meta.tipi-m-typo .title, .hero-meta.tipi-s-typo .title, .entry-content h2, .entry-content h3 {
+
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1.3;
+    text-transform: none;
+}
+@media only screen and (min-width: 1020px){
+.hero-meta.tipi-s-typo .title {
+    font-size: 40px !important;
+}
+}
+.cb-body-light .cb-article-footer .block-wrap h3.cb-post-title a{
+	text-transform: none;
+	font-size: 18px;
+}
+.tags a:before {
+    display:none;
+}
+.entry-content p .video-wrap iframe{
+	margin: 0;
+}
+
+.hero-meta .cb-byline.byline-shaded .byline-part.cats a:after {
+	content: "";
+	display:none;
+}
+.hero-meta .cb-byline.byline-shaded .byline-part.cats a {
+    margin-right: 1em;
+}
+
+.hero-meta .byline-part.cats a:after {
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f00d";
+    width: 10px;
+    height: 10px;
+    visibility: visible;
+/*     position: absolute; */
+    margin-right: 8px;
+    margin-left: 8px;
+    font-weight: 700;
+    opacity: .7;
+}
+.hero-meta .byline-part.cats a {
+
+    margin-right: 0px;
+ 
+}
+.hero-meta .byline-part.separator{
+    display:none;
+}
+.hero-wrap+.article-layout-1 .cb-main {
+	margin-top:0;
+	padding-top:1.5em;
+}
+.single-post .title-beneath .hero-wrap .hero {
+    margin-bottom: 0px;
+}
+
+.wp-block-image figcaption {
+	font-size:14px;
+	text-align: left;
+
+}
+.hero-wrap .caption {
+	   font-size: 16px;
+    position: absolute;
+    right: 0;
+    bottom: 1px;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    padding: 5px 10px;
+    line-height: 1.2;
+
+}
+@media only screen and (
+    min-width: 768px){
+	.entry-content .alignright, .entry-content .alignleft {
+		max-width: 50%;
+		}
+}
+.hero-11 + .single-content .hero-meta .byline{
+	  display: inline-grid;
+		justify-content: left;
+}
+.hero-11 + .single-content .hero-meta .byline .byline-part.cats{
+	  order: 13;
+}
+.hero-11 + .single-content .hero-meta .byline .byline-part.date{
+	  margin: 0 0 20px;
+}
+
+.hero-11 + .single-content .hero-meta .byline .byline-part.cats .cat{
+	 margin-right: 1em;
+	 font-size: 10px;
+   padding: 2px 8px 0px;
+   color: #868686;
+	background-color: #f2f2f2;
+	line-height: 26px;
+	transition: .2s ease-out all;
+}
+.hero-11 + .single-content .hero-meta .byline .byline-part.cats a:after{
+	  display: none;
+}
+.hero-11 + .single-content .hero-meta .byline .byline-part.cats a:hover {
+    background-color: #006DA3;
+    color: #ffffff;
+}
+/* .section-b .block-wrap a:nth-of-type(2) {
+    display: unset;
+	
+}
+.section-b .block-wrap a:nth-of-type(2) button {
+    display:none;
+	
+} */
+aside.cb-sidebar .cb-post-title a,
+.single-content .cb-main article .entry-content-wrap h4.wp-block-heading{
+    text-transform: none;
+}
+#mobSearchBox>form>input {
+	color:#09143a;
+}
+.mob-menu-wrap .vertical-menu {
+    margin: unset;
+}
+@media only screen and (
+    max-width: 479px){
+			.home.cb-body-light .section-a .block-wrap .block-piece-1 article .cb-post-title a{
+				font-size: 20px;
+			}
+		.meta__over-hero.title-middle     .hero-wrap {
+			.caption{
+				position: relative;
+    		bottom: 30px;
+    		float: right;
+			}
+			.mask-overlay{
+				display:none;
+			}
+			.meta-wrap {
+				position: inherit;
+				transform: unset;
+				left: unset;
+				top: unset;
+				text-align: left;
+				    padding: 0 15px;
+				.title{
+										color: #161616;
+
+				}
+				.byline{
+					color: #161616;
+					display: inline-grid;
+		justify-content: left;
+					margin-top: 0;
+					.byline-part.date{
+	  margin: 0 0 20px;
+}
+					.byline-part.cats 
+					{order: 13;}
+						.cat{
+	 margin-right: 1em;
+	 font-size: 10px;
+   padding: 2px 8px 0px;
+   color: #868686;
+	 background-color: #f2f2f2;
+	 line-height: 26px;
+	 transition: .2s ease-out all;
+
+					&:after{
+	  display: none;
+}
+					}
+				}
+    	}
+		}
+
+}
+.community-postings-disclaimer{
+	padding-bottom: 1.25em;
+}
+.broken_link, a.broken_link{
+	    text-decoration: none;
+}		</style>
+		</head>
+<body data-rsssl=1 class="page-template page-template-page-15zine-builder page-template-page-15zine-builder-php page page-id-51109 mob-fi-tall  cb-body-light cb-footer-light has--bg body-mob-header-1 site-mob-menu-a-4 site-mob-menu-1 mm-submenu-2">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>	<div id="cb-outer-container" class="site">
+		<header id="mobhead" class="site-header-block site-mob-header tipi-l-0 site-mob-header-1 sticky-menu-1 sticky-top site-skin-2"><div class="bg-area header-padding tipi-row side-spacing tipi-vertical-c">
+	<ul class="menu-left icons-wrap tipi-vertical-c">
+		<li class="codetipi-15zine-icon vertical-c"><a href="#" class="mob-tr-open" data-target="slide-menu"><i class="codetipi-15zine-i-menu" aria-hidden="true"></i></a></li>	</ul>
+	<div class="logo-main-wrap logo-mob-wrap">
+			</div>
+	<ul class="menu-right icons-wrap tipi-vertical-c">
+					</ul>
+</div>
+</header><!-- .site-mob-header --><div id="mob-line" class="tipi-l-0"></div>		<div id="cb-container" class="site-inner container clearfix">
+	<div id="cb-top-menu" class="secondary-menu-wrap cb-font-header tipi-m-0-down clearfix site-skin-2">
+		<div class="cb-top-menu-wrap tipi-flex side-spacing wrap">
+					</div>
+	</div>
+	<header id="masthead" class="site-header-block site-header clearfix site-header-1 header-skin-1 site-img-1 mm-ani-1 mm-skin-1 main-menu-skin-1 main-menu-width-3 main-menu-bar-color-1 logo-only-when-stuck main-menu-l"><div class="bg-area">
+			<div class="logo-main-wrap header-padding tipi-vertical-c logo-main-wrap-l side-spacing wrap">
+			<div class="logo logo-main"><a href="https://thedaily.case.edu" data-pin-nopin="true"><img src="/wp-content/uploads/2023/06/the-daily-logo.png" srcset="/wp-content/uploads/2023/06/the-daily-logo.png 2x" alt="The Daily"></a></div>					</div>
+		<div class="background"></div></div>
+</header><!-- .site-header --><div id="header-line"></div><nav id="cb-nav-bar" class="main-navigation cb-nav-bar-wrap nav-bar tipi-m-0-down clearfix site-skin-1 mm-ani-1 mm-skin-1 main-menu-bar-color-1 sticky-top sticky-menu sticky-menu-1 logo-only-when-stuck main-menu-l">
+	<div class="menu-bg-area main-navigation-border">
+		<div id="cb-main-menu" class="main-menu-wrap cb-nav-bar-wrap clearfix cb-font-header main-nav-wrap vertical-c side-spacing wrap">
+			<div class="logo-menu-wrap logo-menu-wrap-placeholder"></div>			<ul id="menu-main-menu" class="main-menu nav cb-main-nav main-nav clearfix tipi-flex horizontal-menu">
+				<li id="menu-item-51108" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropper standard-drop menu-item-51108"><a href="https://thedaily.case.edu/campus-community/">Campus &#038; Community</a><div class="menu mm-1" data-mm="1"><div class="menu-wrap menu-wrap-minus-10">
+<ul class="sub-menu">
+	<li id="menu-item-53670" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it menu-item-53670"><a href="https://thedaily.case.edu/category/campus-community/campus-updates/" class="block-more block-mm-init block-changer block-mm-changer" data-title="Campus Updates" data-url="https://thedaily.case.edu/category/campus-community/campus-updates/" data-subtitle="" data-count="5088" data-tid="3"  data-term="category">Campus Updates</a></li>
+	<li id="menu-item-53671" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it menu-item-53671"><a href="https://thedaily.case.edu/category/campus-community/faculty-staff/" class="block-more block-mm-init block-changer block-mm-changer" data-title="Faculty &amp; Staff" data-url="https://thedaily.case.edu/category/campus-community/faculty-staff/" data-subtitle="" data-count="2383" data-tid="5"  data-term="category">Faculty &amp; Staff</a></li>
+	<li id="menu-item-53672" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it menu-item-53672"><a href="https://thedaily.case.edu/category/campus-community/student-life/" class="block-more block-mm-init block-changer block-mm-changer" data-title="Student Life" data-url="https://thedaily.case.edu/category/campus-community/student-life/" data-subtitle="" data-count="2886" data-tid="4"  data-term="category">Student Life</a></li>
+	<li id="menu-item-53673" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it menu-item-53673"><a href="https://thedaily.case.edu/category/campus-community/university-circle/" class="block-more block-mm-init block-changer block-mm-changer" data-title="University Circle" data-url="https://thedaily.case.edu/category/campus-community/university-circle/" data-subtitle="" data-count="69" data-tid="5120"  data-term="category">University Circle</a></li>
+</ul></div></div>
+</li>
+<li id="menu-item-51111" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-51109 current_page_item menu-item-has-children dropper standard-drop menu-item-51111"><a href="https://thedaily.case.edu/university-news/">University News</a><div class="menu mm-1" data-mm="1"><div class="menu-wrap menu-wrap-minus-10">
+<ul class="sub-menu">
+	<li id="menu-item-53685" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it menu-item-53685"><a href="https://thedaily.case.edu/category/awards/" class="block-more block-mm-init block-changer block-mm-changer" data-title="Awards" data-url="https://thedaily.case.edu/category/awards/" data-subtitle="" data-count="1482" data-tid="50"  data-term="category">Awards</a></li>
+	<li id="menu-item-53686" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it menu-item-53686"><a href="https://thedaily.case.edu/category/publications-presentations/" class="block-more block-mm-init block-changer block-mm-changer" data-title="Publications &amp; Presentations" data-url="https://thedaily.case.edu/category/publications-presentations/" data-subtitle="" data-count="1157" data-tid="14"  data-term="category">Publications &amp; Presentations</a></li>
+	<li id="menu-item-53687" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it menu-item-53687"><a href="https://thedaily.case.edu/category/appointments/" class="block-more block-mm-init block-changer block-mm-changer" data-title="Appointments" data-url="https://thedaily.case.edu/category/appointments/" data-subtitle="" data-count="533" data-tid="53"  data-term="category">Appointments</a></li>
+	<li id="menu-item-60707" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it menu-item-60707"><a href="https://thedaily.case.edu/category/op-ed/" class="block-more block-mm-init block-changer block-mm-changer" data-title="Op-ed" data-url="https://thedaily.case.edu/category/op-ed/" data-subtitle="" data-count="251" data-tid="5189"  data-term="category">Op-ed</a></li>
+</ul></div></div>
+</li>
+<li id="menu-item-51148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropper standard-drop menu-item-51148"><a href="https://thedaily.case.edu/research/">Research</a><div class="menu mm-1" data-mm="1"><div class="menu-wrap menu-wrap-minus-10">
+<ul class="sub-menu">
+	<li id="menu-item-53681" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it menu-item-53681"><a href="https://thedaily.case.edu/category/research/health-wellness/" class="block-more block-mm-init block-changer block-mm-changer" data-title="Health &amp; Wellness" data-url="https://thedaily.case.edu/category/research/health-wellness/" data-subtitle="" data-count="705" data-tid="5115"  data-term="category">Health &amp; Wellness</a></li>
+	<li id="menu-item-53682" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it menu-item-53682"><a href="https://thedaily.case.edu/category/research/science-tech/" class="block-more block-mm-init block-changer block-mm-changer" data-title="Science &amp; Tech" data-url="https://thedaily.case.edu/category/research/science-tech/" data-subtitle="" data-count="404" data-tid="5116"  data-term="category">Science &amp; Tech</a></li>
+	<li id="menu-item-53683" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it menu-item-53683"><a href="https://thedaily.case.edu/category/research/business-law-politics/" class="block-more block-mm-init block-changer block-mm-changer" data-title="Business, Law &amp; Politics" data-url="https://thedaily.case.edu/category/research/business-law-politics/" data-subtitle="" data-count="98" data-tid="5117"  data-term="category">Business, Law &amp; Politics</a></li>
+	<li id="menu-item-53684" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it menu-item-53684"><a href="https://thedaily.case.edu/category/research/humanities-art-social-sciences/" class="block-more block-mm-init block-changer block-mm-changer" data-title="Humanities, Art &amp; Social Sciences" data-url="https://thedaily.case.edu/category/research/humanities-art-social-sciences/" data-subtitle="" data-count="136" data-tid="5118"  data-term="category">Humanities, Art &amp; Social Sciences</a></li>
+</ul></div></div>
+</li>
+<li id="menu-item-141101" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper standard-drop menu-item-141101"><a href="https://thedaily.case.edu/category/events/" data-ppp="3" data-tid="20"  data-term="category">Events</a></li>
+<li id="menu-item-51152" class="menu-item menu-item-type-post_type menu-item-object-page dropper standard-drop menu-item-51152"><a href="https://thedaily.case.edu/people/">People</a></li>
+<li id="menu-item-51118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropper standard-drop menu-item-51118"><a href="https://thedaily.case.edu/about/">About</a><div class="menu mm-1" data-mm="1"><div class="menu-wrap menu-wrap-minus-10">
+<ul class="sub-menu">
+	<li id="menu-item-51123" class="menu-item menu-item-type-post_type menu-item-object-page dropper standard-drop menu-item-51123"><a href="https://thedaily.case.edu/about/editorial-guidelines/">Editorial Guidelines</a></li>
+	<li id="menu-item-51124" class="menu-item menu-item-type-post_type menu-item-object-page dropper standard-drop menu-item-51124"><a href="https://thedaily.case.edu/about/submit-to-the-daily/">Submit to The Daily</a></li>
+</ul></div></div>
+</li>
+			</ul>
+			<ul class="menu-icons horizontal-menu tipi-flex-eq-height">
+											</ul>
+		</div>
+	</div>
+</nav>
+<div id="cb-content" class="content-area clearfix"><div class="contents-wrap builder-container"><section id="cb-section-b" class="section-b contains-blocks cb-hp-section clearfix wrap side-spacing"><div class="tipi-cols clearfix"><div class="contains-blocks cb-main tipi-col tipi-xs-12 tipi-m-8"><div id="block-wrap-85942" class="block-wrap block-wrap-21 block-to-see block-wrap-classic clearfix ppl-m-2 ppl-s-2 block-css-85942 block--light" data-id="85942"><div class="block-inner-style"><div class="block-inner-box contents"><div class="block-title-wrap cb-module-header"><h2 class="block-title cb-module-title title">Featured</h2></div><div class="block">		<article class="preview-classic separation-border separation-border-style stack ani-base article-ani article-ani-1 tipi-xs-12 preview-21 with-fi post-169962 post type-post status-publish format-standard has-post-thumbnail hentry category-new-feature category-university-news tag-cleveland-humanities-collaborative tag-grants">
+					<div class="cb-mask mask" style="background:#ffffff;">
+			<a href="https://thedaily.case.edu/with-nearly-3-million-in-grants-mellon-foundation-extends-support-for-humanities-students/" class="mask-img">
+				<img width="360" height="240" src="https://thedaily.case.edu/wp-content/uploads/2024/04/spring-campus-feat-360x240.jpg" class="attachment-codetipi-15zine-360-240 size-codetipi-15zine-360-240 wp-post-image" alt="Photo of Kelvin Smith Library in spring surrounded by flowering trees" decoding="async" srcset="https://thedaily.case.edu/wp-content/uploads/2024/04/spring-campus-feat-360x240.jpg 360w, https://thedaily.case.edu/wp-content/uploads/2024/04/spring-campus-feat-720x480.jpg 720w" sizes="(max-width: 360px) 100vw, 360px" />			</a>
+		</div>
+						<div class="cb-meta cb-article-meta meta">
+								<h2 class="title cb-post-title">
+					<a href="https://thedaily.case.edu/with-nearly-3-million-in-grants-mellon-foundation-extends-support-for-humanities-students/">
+						With nearly $3 million in grants, Mellon Foundation extends support for humanities students					</a>
+				</h2>
+				<div class="cb-byline byline byline-3"><span class="byline-part cb-date date"><time class="entry-date published dateCreated flipboard-date" datetime="2024-04-15T06:57:00-04:00">April 15, 2024</time></span></div><div class="excerpt body-color">When it launched in 2015, the Cleveland Humanities Collaborative sought to build on the academic work of high-performing<span class="cb-excerpt-dots excerpt-ellipsis">...</span></div><div class="cb-byline byline byline-10 byline-shaded byline-cats-design-1"><div class="byline-part cats"><a href="https://thedaily.case.edu/category/features/new-feature/" class="cat">New Feature</a><a href="https://thedaily.case.edu/category/university-news/" class="cat">University News</a></div><span class="byline-part separator separator-likes">&middot;</span></div>			</div>
+		</article>
+				<article class="preview-classic separation-border separation-border-style stack ani-base article-ani article-ani-1 tipi-xs-12 preview-21 with-fi post-169776 post type-post status-publish format-standard has-post-thumbnail hentry category-featured category-university-news tag-artificial-intelligence tag-holoanatomy tag-innovation tag-interactive-commons">
+					<div class="cb-mask mask" style="background:#ffffff;">
+			<a href="https://thedaily.case.edu/cwru-to-collaborate-with-microsoft-on-ai-in-education-research/" class="mask-img">
+				<img width="360" height="240" src="https://thedaily.case.edu/wp-content/uploads/2024/04/blockchain-network-concept-360x240.jpg" class="attachment-codetipi-15zine-360-240 size-codetipi-15zine-360-240 wp-post-image" alt="Background 3d rendering of blockchain network concept with digital cube rotation. Courtesy of Getty Images" decoding="async" srcset="https://thedaily.case.edu/wp-content/uploads/2024/04/blockchain-network-concept-360x240.jpg 360w, https://thedaily.case.edu/wp-content/uploads/2024/04/blockchain-network-concept-720x480.jpg 720w" sizes="(max-width: 360px) 100vw, 360px" />			</a>
+		</div>
+						<div class="cb-meta cb-article-meta meta">
+								<h2 class="title cb-post-title">
+					<a href="https://thedaily.case.edu/cwru-to-collaborate-with-microsoft-on-ai-in-education-research/">
+						CWRU to collaborate with Microsoft on AI in education, research					</a>
+				</h2>
+				<div class="cb-byline byline byline-3"><span class="byline-part cb-date date"><time class="entry-date published dateCreated flipboard-date" datetime="2024-04-10T06:46:00-04:00">April 10, 2024</time></span></div><div class="excerpt body-color">After a decade as partners advancing augmented reality in higher education, Case Western Reserve and Microsoft will once<span class="cb-excerpt-dots excerpt-ellipsis">...</span></div><div class="cb-byline byline byline-10 byline-shaded byline-cats-design-1"><div class="byline-part cats"><a href="https://thedaily.case.edu/category/features/featured/" class="cat">Featured</a><a href="https://thedaily.case.edu/category/university-news/" class="cat">University News</a></div><span class="byline-part separator separator-likes">&middot;</span></div>			</div>
+		</article>
+		</div></div></div></div><div id="block-wrap-55045" class="block-wrap block-wrap-21 block-to-see block-wrap-classic clearfix ppl-m-2 ppl-s-2 block-css-55045 block--light" data-id="55045"><div class="block-inner-style"><div class="block-inner-box contents"><div class="block-title-wrap cb-module-header"><h2 class="block-title cb-module-title title">Gifts</h2></div><div class="block">		<article class="preview-classic separation-border separation-border-style stack ani-base article-ani article-ani-1 tipi-xs-12 preview-21 with-fi post-169611 post type-post status-publish format-standard has-post-thumbnail hentry category-featured category-gifts category-university-news tag-doctor-of-business-administration tag-entrepreneurship tag-interdisciplinary-science-and-engineering-building tag-weatherhead-school-of-management">
+					<div class="cb-mask mask" style="background:#ffffff;">
+			<a href="https://thedaily.case.edu/business-alumnus-commits-1-million-to-universitys-interdisciplinary-science-and-engineering-building/" class="mask-img">
+				<img width="360" height="240" src="https://thedaily.case.edu/wp-content/uploads/2024/04/Joe-Mandato-feat-360x240.jpg" class="attachment-codetipi-15zine-360-240 size-codetipi-15zine-360-240 wp-post-image" alt="Photo of Joe Mandato" decoding="async" srcset="https://thedaily.case.edu/wp-content/uploads/2024/04/Joe-Mandato-feat-360x240.jpg 360w, https://thedaily.case.edu/wp-content/uploads/2024/04/Joe-Mandato-feat-720x480.jpg 720w" sizes="(max-width: 360px) 100vw, 360px" />			</a>
+		</div>
+						<div class="cb-meta cb-article-meta meta">
+								<h2 class="title cb-post-title">
+					<a href="https://thedaily.case.edu/business-alumnus-commits-1-million-to-universitys-interdisciplinary-science-and-engineering-building/">
+						Business alumnus commits $1 million to university’s Interdisciplinary Science and Engineering Building					</a>
+				</h2>
+				<div class="cb-byline byline byline-3"><span class="byline-part cb-date date"><time class="entry-date published dateCreated flipboard-date" datetime="2024-04-05T06:42:00-04:00">April 5, 2024</time></span></div><div class="excerpt body-color">Medtech entrepreneur Joe Mandato (MGT &#8217;04) was well into his career—and living on the West Coast—when he decided<span class="cb-excerpt-dots excerpt-ellipsis">...</span></div><div class="cb-byline byline byline-10 byline-shaded byline-cats-design-1"><div class="byline-part cats"><a href="https://thedaily.case.edu/category/features/featured/" class="cat">Featured</a><a href="https://thedaily.case.edu/category/university-news/gifts/" class="cat">Gifts</a><a href="https://thedaily.case.edu/category/university-news/" class="cat">University News</a></div><span class="byline-part separator separator-likes">&middot;</span></div>			</div>
+		</article>
+				<article class="preview-classic separation-border separation-border-style stack ani-base article-ani article-ani-1 tipi-xs-12 preview-21 with-fi post-168472 post type-post status-publish format-standard has-post-thumbnail hentry category-featured category-gifts category-university-news tag-jack-joseph-and-morton-mandel-school-of-applied-social-sciences tag-stem">
+					<div class="cb-mask mask" style="background:#ffffff;">
+			<a href="https://thedaily.case.edu/jack-joseph-and-morton-mandel-foundation-awards-additional-1-5-million-to-experimental-humanities-initiative/" class="mask-img">
+				<img width="360" height="240" src="https://thedaily.case.edu/wp-content/uploads/2024/03/first-day-students-360x240.jpg" class="attachment-codetipi-15zine-360-240 size-codetipi-15zine-360-240 wp-post-image" alt="Photo of students walking on campus. Photography by Matt Shiffler." decoding="async" srcset="https://thedaily.case.edu/wp-content/uploads/2024/03/first-day-students-360x240.jpg 360w, https://thedaily.case.edu/wp-content/uploads/2024/03/first-day-students-720x480.jpg 720w" sizes="(max-width: 360px) 100vw, 360px" />			</a>
+		</div>
+						<div class="cb-meta cb-article-meta meta">
+								<h2 class="title cb-post-title">
+					<a href="https://thedaily.case.edu/jack-joseph-and-morton-mandel-foundation-awards-additional-1-5-million-to-experimental-humanities-initiative/">
+						Jack, Joseph and Morton Mandel Foundation awards additional $1.5 million to Experimental Humanities initiative					</a>
+				</h2>
+				<div class="cb-byline byline byline-3"><span class="byline-part cb-date date"><time class="entry-date published dateCreated flipboard-date" datetime="2024-03-12T06:57:00-04:00">March 12, 2024</time></span></div><div class="excerpt body-color">Implicit bias in technology. Ethics in environmental engineering. Neuroscience and music. These are just a few of the<span class="cb-excerpt-dots excerpt-ellipsis">...</span></div><div class="cb-byline byline byline-10 byline-shaded byline-cats-design-1"><div class="byline-part cats"><a href="https://thedaily.case.edu/category/features/featured/" class="cat">Featured</a><a href="https://thedaily.case.edu/category/university-news/gifts/" class="cat">Gifts</a><a href="https://thedaily.case.edu/category/university-news/" class="cat">University News</a></div><span class="byline-part separator separator-likes">&middot;</span></div>			</div>
+		</article>
+		</div></div></div></div><div id="block-wrap-25286" class="block-wrap block-wrap-21 block-to-see block-wrap-classic clearfix ppl-m-2 ppl-s-2 block-css-25286 block--light" data-id="25286"><div class="block-inner-style"><div class="block-inner-box contents"><div class="block-title-wrap cb-module-header"><h2 class="block-title cb-module-title title">Media Mentions</h2></div><div class="block">		<article class="preview-classic separation-border separation-border-style stack ani-base article-ani article-ani-1 tipi-xs-12 preview-21 with-fi post-170016 post type-post status-publish format-standard has-post-thumbnail hentry category-media tag-reproductive-rights tag-school-of-law tag-telehealth">
+					<div class="cb-mask mask" style="background:#ffffff;">
+			<a href="https://thedaily.case.edu/laws-maggie-scotece-shares-role-of-telehealth-in-increased-abortion-care-access/" class="mask-img">
+				<img width="360" height="240" src="https://thedaily.case.edu/wp-content/uploads/2023/07/healthcare-legal-360x240.jpg" class="attachment-codetipi-15zine-360-240 size-codetipi-15zine-360-240 wp-post-image" alt="Health Care and Legal Concept with Stethoscope on Green Marble Background" decoding="async" srcset="https://thedaily.case.edu/wp-content/uploads/2023/07/healthcare-legal-360x240.jpg 360w, https://thedaily.case.edu/wp-content/uploads/2023/07/healthcare-legal-720x480.jpg 720w" sizes="(max-width: 360px) 100vw, 360px" />			</a>
+		</div>
+						<div class="cb-meta cb-article-meta meta">
+								<h2 class="title cb-post-title">
+					<a href="https://thedaily.case.edu/laws-maggie-scotece-shares-role-of-telehealth-in-increased-abortion-care-access/">
+						Law&#8217;s Maggie Scotece shares role of telehealth in increased abortion care access					</a>
+				</h2>
+				<div class="cb-byline byline byline-3"><span class="byline-part cb-date date"><time class="entry-date published dateCreated flipboard-date" datetime="2024-04-15T15:23:03-04:00">April 15, 2024</time></span></div><div class="excerpt body-color">Telehealth is making abortion way more accessible for disabled people, but it’s not perfect Reckon:&nbsp;Maggie Scotece,&nbsp;a&nbsp;staff attorney at&nbsp;the&nbsp;School<span class="cb-excerpt-dots excerpt-ellipsis">...</span></div><div class="cb-byline byline byline-10 byline-shaded byline-cats-design-1"><div class="byline-part cats"><a href="https://thedaily.case.edu/category/media/" class="cat">Media</a></div><span class="byline-part separator separator-likes">&middot;</span></div>			</div>
+		</article>
+				<article class="preview-classic separation-border separation-border-style stack ani-base article-ani article-ani-1 tipi-xs-12 preview-21 with-fi post-170017 post type-post status-publish format-standard has-post-thumbnail hentry category-media tag-fraud tag-school-of-law">
+					<div class="cb-mask mask" style="background:#ffffff;">
+			<a href="https://thedaily.case.edu/laws-atiba-ellis-weighs-in-on-conviction-of-former-milwaukee-election-official/" class="mask-img">
+				<img width="360" height="240" src="https://thedaily.case.edu/wp-content/uploads/2024/04/gavel-360x240.jpg" class="attachment-codetipi-15zine-360-240 size-codetipi-15zine-360-240 wp-post-image" alt="Judge gavel, scales of justice and law books in court. Courtesy of Getty Images." decoding="async" srcset="https://thedaily.case.edu/wp-content/uploads/2024/04/gavel-360x240.jpg 360w, https://thedaily.case.edu/wp-content/uploads/2024/04/gavel-720x480.jpg 720w" sizes="(max-width: 360px) 100vw, 360px" />			</a>
+		</div>
+						<div class="cb-meta cb-article-meta meta">
+								<h2 class="title cb-post-title">
+					<a href="https://thedaily.case.edu/laws-atiba-ellis-weighs-in-on-conviction-of-former-milwaukee-election-official/">
+						Law&#8217;s Atiba Ellis weighs in on conviction of former Milwaukee election official					</a>
+				</h2>
+				<div class="cb-byline byline byline-3"><span class="byline-part cb-date date"><time class="entry-date published dateCreated flipboard-date" datetime="2024-04-15T15:21:01-04:00">April 15, 2024</time></span></div><div class="excerpt body-color">Jury finds former Milwaukee election official guilty of election fraud Wisconsin Public Radio: Atiba Ellis, the Laura B. Chisholm Distinguished Research<span class="cb-excerpt-dots excerpt-ellipsis">...</span></div><div class="cb-byline byline byline-10 byline-shaded byline-cats-design-1"><div class="byline-part cats"><a href="https://thedaily.case.edu/category/media/" class="cat">Media</a></div><span class="byline-part separator separator-likes">&middot;</span></div>			</div>
+		</article>
+		</div></div></div></div><div id="block-wrap-19184" class="block-wrap block-wrap-21 block-to-see block-wrap-classic clearfix ppl-m-2 ppl-s-2 block-css-19184 block--light" data-id="19184"><div class="block-inner-style"><div class="block-inner-box contents"><div class="block-title-wrap cb-module-header"><h2 class="block-title cb-module-title title">Awards</h2></div><div class="block">		<article class="preview-classic separation-border separation-border-style stack ani-base article-ani article-ani-1 tipi-xs-12 preview-21 with-fi post-169647 post type-post status-publish format-standard has-post-thumbnail hentry category-awards tag-office-of-the-president">
+					<div class="cb-mask mask" style="background:#ffffff;">
+			<a href="https://thedaily.case.edu/book-by-ms-karen-f-kaler-honored-by-minnesota-chapter-of-the-society-of-architectural-historians/" class="mask-img">
+				<img width="360" height="154" src="https://thedaily.case.edu/wp-content/uploads/2022/12/books-1.jpg" class="attachment-codetipi-15zine-360-240 size-codetipi-15zine-360-240 wp-post-image" alt="close up of hand reaching for book in a library" decoding="async" srcset="https://thedaily.case.edu/wp-content/uploads/2022/12/books-1.jpg 1400w, https://thedaily.case.edu/wp-content/uploads/2022/12/books-1-300x129.jpg 300w, https://thedaily.case.edu/wp-content/uploads/2022/12/books-1-1024x439.jpg 1024w, https://thedaily.case.edu/wp-content/uploads/2022/12/books-1-768x329.jpg 768w" sizes="(max-width: 360px) 100vw, 360px" />			</a>
+		</div>
+						<div class="cb-meta cb-article-meta meta">
+								<h2 class="title cb-post-title">
+					<a href="https://thedaily.case.edu/book-by-ms-karen-f-kaler-honored-by-minnesota-chapter-of-the-society-of-architectural-historians/">
+						Book by Karen F. Kaler honored by Minnesota Chapter of the Society of Architectural Historians					</a>
+				</h2>
+				<div class="cb-byline byline byline-3"><span class="byline-part cb-date date"><time class="entry-date published dateCreated flipboard-date" datetime="2024-04-05T06:56:00-04:00">April 5, 2024</time></span></div><div class="excerpt body-color">Karen F. Kaler’s book, Eastcliff: History of a Home (University of Minnesota Press, 2023), was named the winner<span class="cb-excerpt-dots excerpt-ellipsis">...</span></div><div class="cb-byline byline byline-10 byline-shaded byline-cats-design-1"><div class="byline-part cats"><a href="https://thedaily.case.edu/category/awards/" class="cat">Awards</a></div><span class="byline-part separator separator-likes">&middot;</span></div>			</div>
+		</article>
+				<article class="preview-classic separation-border separation-border-style stack ani-base article-ani article-ani-1 tipi-xs-12 preview-21 with-fi post-169642 post type-post status-publish format-standard has-post-thumbnail hentry category-awards tag-department-of-human-resources tag-employees">
+					<div class="cb-mask mask" style="background:#ffffff;">
+			<a href="https://thedaily.case.edu/winners-of-employee-appreciation-day-raffle-announced/" class="mask-img">
+				<img width="360" height="154" src="https://thedaily.case.edu/wp-content/uploads/2023/04/campus-aerial-pbl-news.jpg" class="attachment-codetipi-15zine-360-240 size-codetipi-15zine-360-240 wp-post-image" alt="Aerial photo of CWRU campus with focus on Peter B. Lewis Building" decoding="async" srcset="https://thedaily.case.edu/wp-content/uploads/2023/04/campus-aerial-pbl-news.jpg 1400w, https://thedaily.case.edu/wp-content/uploads/2023/04/campus-aerial-pbl-news-300x129.jpg 300w, https://thedaily.case.edu/wp-content/uploads/2023/04/campus-aerial-pbl-news-1024x439.jpg 1024w, https://thedaily.case.edu/wp-content/uploads/2023/04/campus-aerial-pbl-news-768x329.jpg 768w" sizes="(max-width: 360px) 100vw, 360px" />			</a>
+		</div>
+						<div class="cb-meta cb-article-meta meta">
+								<h2 class="title cb-post-title">
+					<a href="https://thedaily.case.edu/winners-of-employee-appreciation-day-raffle-announced/">
+						Winners of Employee Appreciation Day Raffle announced					</a>
+				</h2>
+				<div class="cb-byline byline byline-3"><span class="byline-part cb-date date"><time class="entry-date published dateCreated flipboard-date" datetime="2024-04-05T06:19:00-04:00">April 5, 2024</time></span></div><div class="excerpt body-color">The Department of Human Resources recently shared the names of the winners of the Employee Appreciation Day Raffle.<span class="cb-excerpt-dots excerpt-ellipsis">...</span></div><div class="cb-byline byline byline-10 byline-shaded byline-cats-design-1"><div class="byline-part cats"><a href="https://thedaily.case.edu/category/awards/" class="cat">Awards</a></div><span class="byline-part separator separator-likes">&middot;</span></div>			</div>
+		</article>
+		</div></div></div></div><div id="block-wrap-47110" class="block-wrap block-wrap-21 block-to-see block-wrap-classic clearfix ppl-m-2 ppl-s-2 block-css-47110 block--light" data-id="47110"><div class="block-inner-style"><div class="block-inner-box contents"><div class="block-title-wrap cb-module-header"><h2 class="block-title cb-module-title title">Publications &amp; Presentations</h2></div><div class="block">		<article class="preview-classic separation-border separation-border-style stack ani-base article-ani article-ani-1 tipi-xs-12 preview-21 with-fi post-169902 post type-post status-publish format-standard has-post-thumbnail hentry category-publications-presentations tag-school-of-law">
+					<div class="cb-mask mask" style="background:#ffffff;">
+			<a href="https://thedaily.case.edu/laws-sharona-hoffman-and-cassandra-burke-robertson-write-legal-case-study-on-cognitive-decline-in-elderly-drivers/" class="mask-img">
+				<img width="360" height="154" src="https://thedaily.case.edu/wp-content/uploads/2023/03/law-school-feat.jpg" class="attachment-codetipi-15zine-360-240 size-codetipi-15zine-360-240 wp-post-image" alt="Aerial photo of the School of Law" decoding="async" srcset="https://thedaily.case.edu/wp-content/uploads/2023/03/law-school-feat.jpg 1400w, https://thedaily.case.edu/wp-content/uploads/2023/03/law-school-feat-300x129.jpg 300w, https://thedaily.case.edu/wp-content/uploads/2023/03/law-school-feat-1024x439.jpg 1024w, https://thedaily.case.edu/wp-content/uploads/2023/03/law-school-feat-768x329.jpg 768w" sizes="(max-width: 360px) 100vw, 360px" />			</a>
+		</div>
+						<div class="cb-meta cb-article-meta meta">
+								<h2 class="title cb-post-title">
+					<a href="https://thedaily.case.edu/laws-sharona-hoffman-and-cassandra-burke-robertson-write-legal-case-study-on-cognitive-decline-in-elderly-drivers/">
+						Law’s Sharona Hoffman and Cassandra Burke Robertson write legal case study on cognitive decline in elderly drivers					</a>
+				</h2>
+				<div class="cb-byline byline byline-3"><span class="byline-part cb-date date"><time class="entry-date published dateCreated flipboard-date" datetime="2024-04-12T06:42:00-04:00">April 12, 2024</time></span></div><div class="excerpt body-color">With a growing elderly population, cognitive decline in drivers has become a significant public safety concern. More than<span class="cb-excerpt-dots excerpt-ellipsis">...</span></div><div class="cb-byline byline byline-10 byline-shaded byline-cats-design-1"><div class="byline-part cats"><a href="https://thedaily.case.edu/category/publications-presentations/" class="cat">Publications &amp; Presentations</a></div><span class="byline-part separator separator-likes">&middot;</span></div>			</div>
+		</article>
+				<article class="preview-classic separation-border separation-border-style stack ani-base article-ani article-ani-1 tipi-xs-12 preview-21 with-fi post-169903 post type-post status-publish format-standard has-post-thumbnail hentry category-publications-presentations tag-band tag-college-of-arts-and-sciences tag-department-of-music tag-students">
+					<div class="cb-mask mask" style="background:#ffffff;">
+			<a href="https://thedaily.case.edu/music-students-selected-for-prestigious-performance-opportunity-faculty-member-leads-clinic-session-at-conference/" class="mask-img">
+				<img width="360" height="240" src="https://thedaily.case.edu/wp-content/uploads/2024/04/Smutny-Apy-360x240.jpg" class="attachment-codetipi-15zine-360-240 size-codetipi-15zine-360-240 wp-post-image" alt="CWRU students Matthew Smutny and Charlie Apy" decoding="async" srcset="https://thedaily.case.edu/wp-content/uploads/2024/04/Smutny-Apy-360x240.jpg 360w, https://thedaily.case.edu/wp-content/uploads/2024/04/Smutny-Apy-720x480.jpg 720w" sizes="(max-width: 360px) 100vw, 360px" />			</a>
+		</div>
+						<div class="cb-meta cb-article-meta meta">
+								<h2 class="title cb-post-title">
+					<a href="https://thedaily.case.edu/music-students-selected-for-prestigious-performance-opportunity-faculty-member-leads-clinic-session-at-conference/">
+						Music students selected for prestigious performance opportunity; faculty member leads clinic session at conference					</a>
+				</h2>
+				<div class="cb-byline byline byline-3"><span class="byline-part cb-date date"><time class="entry-date published dateCreated flipboard-date" datetime="2024-04-12T06:42:00-04:00">April 12, 2024</time></span></div><div class="excerpt body-color">Case Western Reserve University Department of Music students Matthew Smutny and Charlie Apy, were selected for the prestigious<span class="cb-excerpt-dots excerpt-ellipsis">...</span></div><div class="cb-byline byline byline-10 byline-shaded byline-cats-design-1"><div class="byline-part cats"><a href="https://thedaily.case.edu/category/publications-presentations/" class="cat">Publications &amp; Presentations</a></div><span class="byline-part separator separator-likes">&middot;</span></div>			</div>
+		</article>
+		</div></div></div></div><div id="block-wrap-41916" class="block-wrap block-wrap-21 block-to-see block-wrap-classic clearfix ppl-m-2 ppl-s-2 block-css-41916 block--light" data-id="41916"><div class="block-inner-style"><div class="block-inner-box contents"><div class="block-title-wrap cb-module-header"><h2 class="block-title cb-module-title title">Appointments</h2></div><div class="block">		<article class="preview-classic separation-border separation-border-style stack ani-base article-ani article-ani-1 tipi-xs-12 preview-21 with-fi post-168070 post type-post status-publish format-standard has-post-thumbnail hentry category-appointments category-featured tag-alumni tag-national-institutes-of-health tag-school-of-medicine">
+					<div class="cb-mask mask" style="background:#ffffff;">
+			<a href="https://thedaily.case.edu/case-western-reserve-board-of-trustees-names-renowned-infectious-disease-expert-double-alumna-its-next-chair/" class="mask-img">
+				<img width="360" height="240" src="https://thedaily.case.edu/wp-content/uploads/2024/02/Julie-Gerberding-360x240.jpg" class="attachment-codetipi-15zine-360-240 size-codetipi-15zine-360-240 wp-post-image" alt="Photo of Julie Gerberding" decoding="async" srcset="https://thedaily.case.edu/wp-content/uploads/2024/02/Julie-Gerberding-360x240.jpg 360w, https://thedaily.case.edu/wp-content/uploads/2024/02/Julie-Gerberding-720x480.jpg 720w" sizes="(max-width: 360px) 100vw, 360px" />			</a>
+		</div>
+						<div class="cb-meta cb-article-meta meta">
+								<h2 class="title cb-post-title">
+					<a href="https://thedaily.case.edu/case-western-reserve-board-of-trustees-names-renowned-infectious-disease-expert-double-alumna-its-next-chair/">
+						Case Western Reserve Board of Trustees names renowned infectious disease expert, double alumna its next chair					</a>
+				</h2>
+				<div class="cb-byline byline byline-3"><span class="byline-part cb-date date"><time class="entry-date published dateCreated flipboard-date" datetime="2024-02-28T06:28:00-05:00">February 28, 2024</time></span></div><div class="excerpt body-color">Vice Chair Julie Gerberding (WRC ’77, MED ’81), first woman director of the CDC, to become chair in<span class="cb-excerpt-dots excerpt-ellipsis">...</span></div><div class="cb-byline byline byline-10 byline-shaded byline-cats-design-1"><div class="byline-part cats"><a href="https://thedaily.case.edu/category/appointments/" class="cat">Appointments</a><a href="https://thedaily.case.edu/category/features/featured/" class="cat">Featured</a></div><span class="byline-part separator separator-likes">&middot;</span></div>			</div>
+		</article>
+				<article class="preview-classic separation-border separation-border-style stack ani-base article-ani article-ani-1 tipi-xs-12 preview-21 with-fi post-166457 post type-post status-publish format-standard has-post-thumbnail hentry category-appointments tag-schubert-center-for-child-studies">
+					<div class="cb-mask mask" style="background:#ffffff;">
+			<a href="https://thedaily.case.edu/gov-dewine-appoints-gabriella-celeste-to-ohio-juvenile-justice-working-group/" class="mask-img">
+				<img width="360" height="240" src="https://thedaily.case.edu/wp-content/uploads/2024/01/Gabriella-Celeste-360x240.jpg" class="attachment-codetipi-15zine-360-240 size-codetipi-15zine-360-240 wp-post-image" alt="Photo of Gabriella Celeste" decoding="async" srcset="https://thedaily.case.edu/wp-content/uploads/2024/01/Gabriella-Celeste-360x240.jpg 360w, https://thedaily.case.edu/wp-content/uploads/2024/01/Gabriella-Celeste-720x480.jpg 720w" sizes="(max-width: 360px) 100vw, 360px" />			</a>
+		</div>
+						<div class="cb-meta cb-article-meta meta">
+								<h2 class="title cb-post-title">
+					<a href="https://thedaily.case.edu/gov-dewine-appoints-gabriella-celeste-to-ohio-juvenile-justice-working-group/">
+						Gov. DeWine appoints Gabriella Celeste to Ohio Juvenile Justice Working Group					</a>
+				</h2>
+				<div class="cb-byline byline byline-3"><span class="byline-part cb-date date"><time class="entry-date published dateCreated flipboard-date" datetime="2024-01-26T06:59:00-05:00">January 26, 2024</time></span></div><div class="excerpt body-color">Gov. Mike DeWine announced the establishment of the Ohio Juvenile Justice Working Group in November. The task force<span class="cb-excerpt-dots excerpt-ellipsis">...</span></div><div class="cb-byline byline byline-10 byline-shaded byline-cats-design-1"><div class="byline-part cats"><a href="https://thedaily.case.edu/category/appointments/" class="cat">Appointments</a></div><span class="byline-part separator separator-likes">&middot;</span></div>			</div>
+		</article>
+		</div></div></div></div><div id="block-wrap-15433" class="block-wrap block-wrap-21 block-to-see block-wrap-classic clearfix ppl-m-2 ppl-s-2 block-css-15433 block--light" data-id="15433"><div class="block-inner-style"><div class="block-inner-box contents"><div class="block-title-wrap cb-module-header"><h2 class="block-title cb-module-title title">Op-Ed</h2></div><div class="block">		<article class="preview-classic separation-border separation-border-style stack ani-base article-ani article-ani-1 tipi-xs-12 preview-21 with-fi post-163719 post type-post status-publish format-standard has-post-thumbnail hentry category-op-ed tag-weatherhead">
+					<div class="cb-mask mask" style="background:#ffffff;">
+			<a href="https://thedaily.case.edu/weatherheads-john-paul-stephens-offers-tips-on-making-the-most-out-of-a-company-retreat/" class="mask-img">
+				<img width="360" height="240" src="https://dailymedia.case.edu/wp-content/uploads/2016/07/18154805/weatherhead2.jpg" class="attachment-codetipi-15zine-360-240 size-codetipi-15zine-360-240 wp-post-image" alt="Exterior of the Peter B. Lewis Building" decoding="async" srcset="https://dailymedia.case.edu/wp-content/uploads/2016/07/18154805/weatherhead2.jpg 360w, https://dailymedia.case.edu/wp-content/uploads/2016/07/18154805/weatherhead2-300x200.jpg 300w" sizes="(max-width: 360px) 100vw, 360px" />			</a>
+		</div>
+						<div class="cb-meta cb-article-meta meta">
+								<h2 class="title cb-post-title">
+					<a href="https://thedaily.case.edu/weatherheads-john-paul-stephens-offers-tips-on-making-the-most-out-of-a-company-retreat/">
+						Weatherhead&#8217;s John Paul Stephens offers tips on making the most out of a company retreat					</a>
+				</h2>
+				<div class="cb-byline byline byline-3"><span class="byline-part cb-date date"><time class="entry-date published dateCreated flipboard-date" datetime="2023-11-03T11:23:41-04:00">November 3, 2023</time></span></div><div class="excerpt body-color">What to consider when planning company retreatsSmart Business: John Paul Stephens, associate professor at Weatherhead School of Management, wrote<span class="cb-excerpt-dots excerpt-ellipsis">...</span></div><div class="cb-byline byline byline-10 byline-shaded byline-cats-design-1"><div class="byline-part cats"><a href="https://thedaily.case.edu/category/op-ed/" class="cat">Op-ed</a></div><span class="byline-part separator separator-likes">&middot;</span></div>			</div>
+		</article>
+				<article class="preview-classic separation-border separation-border-style stack ani-base article-ani article-ani-1 tipi-xs-12 preview-21 with-fi post-163717 post type-post status-publish format-standard has-post-thumbnail hentry category-op-ed tag-college-of-arts-and-sciences">
+					<div class="cb-mask mask" style="background:#ffffff;">
+			<a href="https://thedaily.case.edu/medical-anthropology-students-amber-akhter-and-sean-liu-say-that-ohios-healthcare-system-needs-to-change/" class="mask-img">
+				<img width="360" height="240" src="https://thedaily.case.edu/wp-content/uploads/2021/07/GettyImages-1291715271-e1632754214600.jpg" class="attachment-codetipi-15zine-360-240 size-codetipi-15zine-360-240 wp-post-image" alt="Nurse gives senior adult healthcare worker the Covid-19 vaccine" decoding="async" />			</a>
+		</div>
+						<div class="cb-meta cb-article-meta meta">
+								<h2 class="title cb-post-title">
+					<a href="https://thedaily.case.edu/medical-anthropology-students-amber-akhter-and-sean-liu-say-that-ohios-healthcare-system-needs-to-change/">
+						Medical Anthropology students Amber Akhter and Sean Liu say that Ohio&#8217;s healthcare system needs to change					</a>
+				</h2>
+				<div class="cb-byline byline byline-3"><span class="byline-part cb-date date"><time class="entry-date published dateCreated flipboard-date" datetime="2023-11-03T11:20:41-04:00">November 3, 2023</time></span></div><div class="excerpt body-color">Columbus residents have a right to health. City council, statehouse must act.The Columbus Dispatch: Amber Akhter, a biochemistry and<span class="cb-excerpt-dots excerpt-ellipsis">...</span></div><div class="cb-byline byline byline-10 byline-shaded byline-cats-design-1"><div class="byline-part cats"><a href="https://thedaily.case.edu/category/op-ed/" class="cat">Op-ed</a></div><span class="byline-part separator separator-likes">&middot;</span></div>			</div>
+		</article>
+		</div></div></div></div></div><div class="sidebar-wrap tipi-xs-12 tipi-m-4 tipi-col clearfix"><aside id="cb-sidebar-b" class="cb-sidebar sidebar cb-sidebar-hp clearfix"><div id="archives-13" class="cb-sidebar-widget codetipi-15zine-widget widget_archive"><h3 class="cb-sidebar-widget-title cb-widget-title widget-title title">Archives</h3>		<label class="screen-reader-text" for="archives-dropdown-13">Archives</label>
+		<select id="archives-dropdown-13" name="archive-dropdown">
+			
+			<option value="">Select Month</option>
+				<option value='https://thedaily.case.edu/2024/04/'> April 2024 </option>
+	<option value='https://thedaily.case.edu/2024/03/'> March 2024 </option>
+	<option value='https://thedaily.case.edu/2024/02/'> February 2024 </option>
+	<option value='https://thedaily.case.edu/2024/01/'> January 2024 </option>
+	<option value='https://thedaily.case.edu/2023/12/'> December 2023 </option>
+	<option value='https://thedaily.case.edu/2023/11/'> November 2023 </option>
+	<option value='https://thedaily.case.edu/2023/10/'> October 2023 </option>
+	<option value='https://thedaily.case.edu/2023/09/'> September 2023 </option>
+	<option value='https://thedaily.case.edu/2023/08/'> August 2023 </option>
+	<option value='https://thedaily.case.edu/2023/07/'> July 2023 </option>
+	<option value='https://thedaily.case.edu/2023/06/'> June 2023 </option>
+	<option value='https://thedaily.case.edu/2023/05/'> May 2023 </option>
+	<option value='https://thedaily.case.edu/2023/04/'> April 2023 </option>
+	<option value='https://thedaily.case.edu/2023/03/'> March 2023 </option>
+	<option value='https://thedaily.case.edu/2023/02/'> February 2023 </option>
+	<option value='https://thedaily.case.edu/2023/01/'> January 2023 </option>
+	<option value='https://thedaily.case.edu/2022/12/'> December 2022 </option>
+	<option value='https://thedaily.case.edu/2022/11/'> November 2022 </option>
+	<option value='https://thedaily.case.edu/2022/10/'> October 2022 </option>
+	<option value='https://thedaily.case.edu/2022/09/'> September 2022 </option>
+	<option value='https://thedaily.case.edu/2022/08/'> August 2022 </option>
+	<option value='https://thedaily.case.edu/2022/07/'> July 2022 </option>
+	<option value='https://thedaily.case.edu/2022/06/'> June 2022 </option>
+	<option value='https://thedaily.case.edu/2022/05/'> May 2022 </option>
+	<option value='https://thedaily.case.edu/2022/04/'> April 2022 </option>
+	<option value='https://thedaily.case.edu/2022/03/'> March 2022 </option>
+	<option value='https://thedaily.case.edu/2022/02/'> February 2022 </option>
+	<option value='https://thedaily.case.edu/2022/01/'> January 2022 </option>
+	<option value='https://thedaily.case.edu/2021/12/'> December 2021 </option>
+	<option value='https://thedaily.case.edu/2021/11/'> November 2021 </option>
+	<option value='https://thedaily.case.edu/2021/10/'> October 2021 </option>
+	<option value='https://thedaily.case.edu/2021/09/'> September 2021 </option>
+	<option value='https://thedaily.case.edu/2021/08/'> August 2021 </option>
+	<option value='https://thedaily.case.edu/2021/07/'> July 2021 </option>
+	<option value='https://thedaily.case.edu/2021/06/'> June 2021 </option>
+	<option value='https://thedaily.case.edu/2021/05/'> May 2021 </option>
+	<option value='https://thedaily.case.edu/2021/04/'> April 2021 </option>
+	<option value='https://thedaily.case.edu/2021/03/'> March 2021 </option>
+	<option value='https://thedaily.case.edu/2021/02/'> February 2021 </option>
+	<option value='https://thedaily.case.edu/2021/01/'> January 2021 </option>
+	<option value='https://thedaily.case.edu/2020/12/'> December 2020 </option>
+	<option value='https://thedaily.case.edu/2020/11/'> November 2020 </option>
+	<option value='https://thedaily.case.edu/2020/10/'> October 2020 </option>
+	<option value='https://thedaily.case.edu/2020/09/'> September 2020 </option>
+	<option value='https://thedaily.case.edu/2020/08/'> August 2020 </option>
+	<option value='https://thedaily.case.edu/2020/07/'> July 2020 </option>
+	<option value='https://thedaily.case.edu/2020/06/'> June 2020 </option>
+	<option value='https://thedaily.case.edu/2020/05/'> May 2020 </option>
+	<option value='https://thedaily.case.edu/2020/04/'> April 2020 </option>
+	<option value='https://thedaily.case.edu/2020/03/'> March 2020 </option>
+	<option value='https://thedaily.case.edu/2020/02/'> February 2020 </option>
+	<option value='https://thedaily.case.edu/2020/01/'> January 2020 </option>
+	<option value='https://thedaily.case.edu/2019/12/'> December 2019 </option>
+	<option value='https://thedaily.case.edu/2019/11/'> November 2019 </option>
+	<option value='https://thedaily.case.edu/2019/10/'> October 2019 </option>
+	<option value='https://thedaily.case.edu/2019/09/'> September 2019 </option>
+	<option value='https://thedaily.case.edu/2019/08/'> August 2019 </option>
+	<option value='https://thedaily.case.edu/2019/07/'> July 2019 </option>
+	<option value='https://thedaily.case.edu/2019/06/'> June 2019 </option>
+	<option value='https://thedaily.case.edu/2019/05/'> May 2019 </option>
+	<option value='https://thedaily.case.edu/2019/04/'> April 2019 </option>
+	<option value='https://thedaily.case.edu/2019/03/'> March 2019 </option>
+	<option value='https://thedaily.case.edu/2019/02/'> February 2019 </option>
+	<option value='https://thedaily.case.edu/2019/01/'> January 2019 </option>
+	<option value='https://thedaily.case.edu/2018/12/'> December 2018 </option>
+	<option value='https://thedaily.case.edu/2018/11/'> November 2018 </option>
+	<option value='https://thedaily.case.edu/2018/10/'> October 2018 </option>
+	<option value='https://thedaily.case.edu/2018/09/'> September 2018 </option>
+	<option value='https://thedaily.case.edu/2018/08/'> August 2018 </option>
+	<option value='https://thedaily.case.edu/2018/07/'> July 2018 </option>
+	<option value='https://thedaily.case.edu/2018/06/'> June 2018 </option>
+	<option value='https://thedaily.case.edu/2018/05/'> May 2018 </option>
+	<option value='https://thedaily.case.edu/2018/04/'> April 2018 </option>
+	<option value='https://thedaily.case.edu/2018/03/'> March 2018 </option>
+	<option value='https://thedaily.case.edu/2018/02/'> February 2018 </option>
+	<option value='https://thedaily.case.edu/2018/01/'> January 2018 </option>
+	<option value='https://thedaily.case.edu/2017/12/'> December 2017 </option>
+	<option value='https://thedaily.case.edu/2017/11/'> November 2017 </option>
+	<option value='https://thedaily.case.edu/2017/10/'> October 2017 </option>
+	<option value='https://thedaily.case.edu/2017/09/'> September 2017 </option>
+	<option value='https://thedaily.case.edu/2017/08/'> August 2017 </option>
+	<option value='https://thedaily.case.edu/2017/07/'> July 2017 </option>
+	<option value='https://thedaily.case.edu/2017/06/'> June 2017 </option>
+	<option value='https://thedaily.case.edu/2017/05/'> May 2017 </option>
+	<option value='https://thedaily.case.edu/2017/04/'> April 2017 </option>
+	<option value='https://thedaily.case.edu/2017/03/'> March 2017 </option>
+	<option value='https://thedaily.case.edu/2017/02/'> February 2017 </option>
+	<option value='https://thedaily.case.edu/2017/01/'> January 2017 </option>
+	<option value='https://thedaily.case.edu/2016/12/'> December 2016 </option>
+	<option value='https://thedaily.case.edu/2016/11/'> November 2016 </option>
+	<option value='https://thedaily.case.edu/2016/10/'> October 2016 </option>
+	<option value='https://thedaily.case.edu/2016/09/'> September 2016 </option>
+	<option value='https://thedaily.case.edu/2016/08/'> August 2016 </option>
+	<option value='https://thedaily.case.edu/2016/07/'> July 2016 </option>
+	<option value='https://thedaily.case.edu/2016/06/'> June 2016 </option>
+	<option value='https://thedaily.case.edu/2016/05/'> May 2016 </option>
+	<option value='https://thedaily.case.edu/2016/04/'> April 2016 </option>
+	<option value='https://thedaily.case.edu/2016/03/'> March 2016 </option>
+	<option value='https://thedaily.case.edu/2016/02/'> February 2016 </option>
+	<option value='https://thedaily.case.edu/2016/01/'> January 2016 </option>
+	<option value='https://thedaily.case.edu/2015/12/'> December 2015 </option>
+	<option value='https://thedaily.case.edu/2015/11/'> November 2015 </option>
+	<option value='https://thedaily.case.edu/2015/10/'> October 2015 </option>
+	<option value='https://thedaily.case.edu/2015/09/'> September 2015 </option>
+	<option value='https://thedaily.case.edu/2015/08/'> August 2015 </option>
+	<option value='https://thedaily.case.edu/2015/07/'> July 2015 </option>
+	<option value='https://thedaily.case.edu/2015/06/'> June 2015 </option>
+	<option value='https://thedaily.case.edu/2015/05/'> May 2015 </option>
+	<option value='https://thedaily.case.edu/2015/04/'> April 2015 </option>
+	<option value='https://thedaily.case.edu/2015/03/'> March 2015 </option>
+	<option value='https://thedaily.case.edu/2015/02/'> February 2015 </option>
+	<option value='https://thedaily.case.edu/2015/01/'> January 2015 </option>
+	<option value='https://thedaily.case.edu/2014/12/'> December 2014 </option>
+	<option value='https://thedaily.case.edu/2014/11/'> November 2014 </option>
+	<option value='https://thedaily.case.edu/2014/10/'> October 2014 </option>
+	<option value='https://thedaily.case.edu/2014/09/'> September 2014 </option>
+	<option value='https://thedaily.case.edu/2014/08/'> August 2014 </option>
+	<option value='https://thedaily.case.edu/2014/07/'> July 2014 </option>
+	<option value='https://thedaily.case.edu/2014/06/'> June 2014 </option>
+	<option value='https://thedaily.case.edu/2014/05/'> May 2014 </option>
+	<option value='https://thedaily.case.edu/2014/04/'> April 2014 </option>
+	<option value='https://thedaily.case.edu/2014/03/'> March 2014 </option>
+	<option value='https://thedaily.case.edu/2014/02/'> February 2014 </option>
+	<option value='https://thedaily.case.edu/2014/01/'> January 2014 </option>
+	<option value='https://thedaily.case.edu/2013/12/'> December 2013 </option>
+	<option value='https://thedaily.case.edu/2013/11/'> November 2013 </option>
+	<option value='https://thedaily.case.edu/2013/10/'> October 2013 </option>
+	<option value='https://thedaily.case.edu/2013/09/'> September 2013 </option>
+	<option value='https://thedaily.case.edu/2013/08/'> August 2013 </option>
+	<option value='https://thedaily.case.edu/2013/07/'> July 2013 </option>
+	<option value='https://thedaily.case.edu/2013/06/'> June 2013 </option>
+	<option value='https://thedaily.case.edu/2013/05/'> May 2013 </option>
+	<option value='https://thedaily.case.edu/2013/04/'> April 2013 </option>
+	<option value='https://thedaily.case.edu/2013/03/'> March 2013 </option>
+	<option value='https://thedaily.case.edu/2013/02/'> February 2013 </option>
+	<option value='https://thedaily.case.edu/2013/01/'> January 2013 </option>
+	<option value='https://thedaily.case.edu/2012/12/'> December 2012 </option>
+	<option value='https://thedaily.case.edu/2012/11/'> November 2012 </option>
+	<option value='https://thedaily.case.edu/2012/10/'> October 2012 </option>
+	<option value='https://thedaily.case.edu/2012/09/'> September 2012 </option>
+	<option value='https://thedaily.case.edu/2012/08/'> August 2012 </option>
+	<option value='https://thedaily.case.edu/2012/07/'> July 2012 </option>
+	<option value='https://thedaily.case.edu/2012/06/'> June 2012 </option>
+	<option value='https://thedaily.case.edu/2012/05/'> May 2012 </option>
+	<option value='https://thedaily.case.edu/2012/04/'> April 2012 </option>
+	<option value='https://thedaily.case.edu/2012/03/'> March 2012 </option>
+	<option value='https://thedaily.case.edu/2012/02/'> February 2012 </option>
+	<option value='https://thedaily.case.edu/2012/01/'> January 2012 </option>
+	<option value='https://thedaily.case.edu/2011/12/'> December 2011 </option>
+	<option value='https://thedaily.case.edu/2011/11/'> November 2011 </option>
+	<option value='https://thedaily.case.edu/2011/10/'> October 2011 </option>
+	<option value='https://thedaily.case.edu/2011/09/'> September 2011 </option>
+	<option value='https://thedaily.case.edu/2011/08/'> August 2011 </option>
+	<option value='https://thedaily.case.edu/2011/07/'> July 2011 </option>
+	<option value='https://thedaily.case.edu/2011/06/'> June 2011 </option>
+	<option value='https://thedaily.case.edu/2011/05/'> May 2011 </option>
+
+		</select>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "archives-dropdown-13" );
+	function onSelectChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value !== '' ) {
+			document.location.href = this.options[ this.selectedIndex ].value;
+		}
+	}
+	dropdown.onchange = onSelectChange;
+})();
+/* ]]> */
+</script>
+			</div><div id="cb-recent-posts-45" class="cb-sidebar-widget codetipi-15zine-widget cb-widget-latest-articles"><h3 class="cb-sidebar-widget-title cb-widget-title widget-title title">Upcoming Events</h3>
+    		<div class="cb-module-block cb-small-margin">
+    		                <article class="cb-looper cb-article clearfix cb-article-small  cb-separated">
+                    <div class="cb-mask cb-img-fw" >
+                        <a href="https://thedaily.case.edu/weatherhead-student-showcase/"><img width="100" height="65" src="https://dailymedia.case.edu/wp-content/uploads/2019/11/26133346/WSOM_FI-100x65.jpg" class="attachment-cb-100-65 size-cb-100-65 wp-post-image" alt="The exterior of the Peter B Lewis Building under a clear sky" decoding="async" srcset="https://dailymedia.case.edu/wp-content/uploads/2019/11/26133346/WSOM_FI-100x65.jpg 100w, https://dailymedia.case.edu/wp-content/uploads/2019/11/26133346/WSOM_FI-260x170.jpg 260w, https://dailymedia.case.edu/wp-content/uploads/2019/11/26133346/WSOM_FI-759x500.jpg 759w" sizes="(max-width: 100px) 100vw, 100px" /></a>                                            </div>
+                    <div class="cb-meta cb-article-meta">
+                        <h4 class="cb-post-title"><a href="https://thedaily.case.edu/weatherhead-student-showcase/">Weatherhead Student Showcase</a></h4>
+                        <div class="cb-byline cb-byline-short cb-byline-date"><span class="cb-date"><time class="entry-date updated" datetime="2024-04-15">April 15, 2024</time></span></div>                    </div>
+                                    </article>
+    		                <article class="cb-looper cb-article clearfix cb-article-small  cb-separated">
+                    <div class="cb-mask cb-img-fw" >
+                        <a href="https://thedaily.case.edu/word-magic-inspiration-and-awe-readings-and-conversation-with-kwame-alexander/"><img width="100" height="65" src="https://dailymedia.case.edu/wp-content/uploads/2018/05/18113650/GettyImages-892252454-100x65.jpg" class="attachment-cb-100-65 size-cb-100-65 wp-post-image" alt="row of people at workshop or lecture taking notes" decoding="async" srcset="https://dailymedia.case.edu/wp-content/uploads/2018/05/18113650/GettyImages-892252454-100x65.jpg 100w, https://dailymedia.case.edu/wp-content/uploads/2018/05/18113650/GettyImages-892252454-260x170.jpg 260w, https://dailymedia.case.edu/wp-content/uploads/2018/05/18113650/GettyImages-892252454-759x500.jpg 759w" sizes="(max-width: 100px) 100vw, 100px" /></a>                                            </div>
+                    <div class="cb-meta cb-article-meta">
+                        <h4 class="cb-post-title"><a href="https://thedaily.case.edu/word-magic-inspiration-and-awe-readings-and-conversation-with-kwame-alexander/">Word Magic, Inspiration, and Awe: Readings and Conversation with Kwame Alexander</a></h4>
+                        <div class="cb-byline cb-byline-short cb-byline-date"><span class="cb-date"><time class="entry-date updated" datetime="2024-04-15">April 15, 2024</time></span></div>                    </div>
+                                    </article>
+    		                <article class="cb-looper cb-article clearfix cb-article-small  cb-separated">
+                    <div class="cb-mask cb-img-fw" >
+                        <a href="https://thedaily.case.edu/life-after-death-a-lecture-by-yvonne-pointer/"><img width="100" height="65" src="https://thedaily.case.edu/wp-content/uploads/2022/04/GettyImages-1023551840-100x65.jpg" class="attachment-cb-100-65 size-cb-100-65 wp-post-image" alt="" decoding="async" srcset="https://thedaily.case.edu/wp-content/uploads/2022/04/GettyImages-1023551840-100x65.jpg 100w, https://thedaily.case.edu/wp-content/uploads/2022/04/GettyImages-1023551840-260x170.jpg 260w, https://thedaily.case.edu/wp-content/uploads/2022/04/GettyImages-1023551840-759x500.jpg 759w" sizes="(max-width: 100px) 100vw, 100px" /></a>                                            </div>
+                    <div class="cb-meta cb-article-meta">
+                        <h4 class="cb-post-title"><a href="https://thedaily.case.edu/life-after-death-a-lecture-by-yvonne-pointer/">“Life After Death”: A Lecture by Yvonne Pointer</a></h4>
+                        <div class="cb-byline cb-byline-short cb-byline-date"><span class="cb-date"><time class="entry-date updated" datetime="2024-04-15">April 15, 2024</time></span></div>                    </div>
+                                    </article>
+    		    		</div>
+    		</div>    <div id="text-28" class="cb-sidebar-widget codetipi-15zine-widget widget_text">			<div class="textwidget"><div style="">
+<a href="/category/events/"><button class="base-btn button-primary sidebar-btn" type="button">View All Events</button></a>
+</div></div>
+		</div><div id="cb-recent-posts-48" class="cb-sidebar-widget codetipi-15zine-widget cb-widget-latest-articles"><h3 class="cb-sidebar-widget-title cb-widget-title widget-title title">Rankings</h3>
+    		<div class="cb-module-block cb-small-margin">
+    		                <article class="cb-looper cb-article clearfix cb-article-small  cb-separated">
+                    <div class="cb-mask cb-img-fw" >
+                        <a href="https://thedaily.case.edu/u-s-news-world-report-ranks-some-cwru-graduate-professional-programs/"><img width="1400" height="600" src="https://thedaily.case.edu/wp-content/uploads/2024/04/spring-campus-feat.jpg" class="attachment-cb-100-65 size-cb-100-65 wp-post-image" alt="Photo of Kelvin Smith Library in spring surrounded by flowering trees" decoding="async" srcset="https://thedaily.case.edu/wp-content/uploads/2024/04/spring-campus-feat.jpg 1400w, https://thedaily.case.edu/wp-content/uploads/2024/04/spring-campus-feat-300x129.jpg 300w, https://thedaily.case.edu/wp-content/uploads/2024/04/spring-campus-feat-1024x439.jpg 1024w, https://thedaily.case.edu/wp-content/uploads/2024/04/spring-campus-feat-768x329.jpg 768w, https://thedaily.case.edu/wp-content/uploads/2024/04/spring-campus-feat-770x330.jpg 770w" sizes="(max-width: 1400px) 100vw, 1400px" /></a>                                            </div>
+                    <div class="cb-meta cb-article-meta">
+                        <h4 class="cb-post-title"><a href="https://thedaily.case.edu/u-s-news-world-report-ranks-some-cwru-graduate-professional-programs/"><em>U.S. News &#038; World Report</em> ranks some CWRU graduate, professional programs</a></h4>
+                        <div class="cb-byline cb-byline-short cb-byline-date"><span class="cb-date"><time class="entry-date updated" datetime="2024-04-12">April 9, 2024</time></span></div>                    </div>
+                                    </article>
+    		                <article class="cb-looper cb-article clearfix cb-article-small  cb-separated">
+                    <div class="cb-mask cb-img-fw" >
+                        <a href="https://thedaily.case.edu/new-data-driven-ranking-places-cwru-among-the-nations-best/"><img width="1400" height="600" src="https://thedaily.case.edu/wp-content/uploads/2023/11/biomolecular.jpg" class="attachment-cb-100-65 size-cb-100-65 wp-post-image" alt="Photo of a biomolecular engineering student working in a lab at the Case School of Engineering. Photography by Matt Shiffler." decoding="async" srcset="https://thedaily.case.edu/wp-content/uploads/2023/11/biomolecular.jpg 1400w, https://thedaily.case.edu/wp-content/uploads/2023/11/biomolecular-300x129.jpg 300w, https://thedaily.case.edu/wp-content/uploads/2023/11/biomolecular-1024x439.jpg 1024w, https://thedaily.case.edu/wp-content/uploads/2023/11/biomolecular-768x329.jpg 768w, https://thedaily.case.edu/wp-content/uploads/2023/11/biomolecular-770x330.jpg 770w" sizes="(max-width: 1400px) 100vw, 1400px" /></a>                                            </div>
+                    <div class="cb-meta cb-article-meta">
+                        <h4 class="cb-post-title"><a href="https://thedaily.case.edu/new-data-driven-ranking-places-cwru-among-the-nations-best/">New data-driven ranking places CWRU among the nation’s best</a></h4>
+                        <div class="cb-byline cb-byline-short cb-byline-date"><span class="cb-date"><time class="entry-date updated" datetime="2023-11-28">November 27, 2023</time></span></div>                    </div>
+                                    </article>
+    		    		</div>
+    		</div>    <div id="text-29" class="cb-sidebar-widget codetipi-15zine-widget widget_text">			<div class="textwidget"><div style="">
+<a href="/category/rankings/"><button class="base-btn button-primary sidebar-btn" type="button">View All Stories</button></a>
+</div></div>
+		</div></aside></div></div></section></div></div><footer id="cb-footer" class="site-footer">
+			<div id="cb-widgets" class="cb-footer-x cb-footer-b wrap clearfix cb-site-padding">
+							<div class="cb-one cb-column clearfix">
+					<div id="single-image-2" class="cb-footer-widget codetipi-15zine-widget clearfix cb-single-image-widget clearfix"><img src="https://dudbm6bcnmy8e.cloudfront.net/cwru/img/cwru_acronym_blue.svg" alt=" "  data-at2x="https://dudbm6bcnmy8e.cloudfront.net/cwru/img/cwru_acronym_blue.svg" /></div><div id="text-2" class="cb-footer-widget codetipi-15zine-widget clearfix widget_text">			<div class="textwidget">© 2023 <a href="http://case.edu">Case Western Reserve University</a>
+<br>
+10900 Euclid Ave.
+<br>
+Cleveland, Ohio 44106
+<br>
+<a href="tel:216-368-2000">216.368.2000</a> (<a href="http://www.case.edu/legal.html">legal notice</a>)</div>
+		</div>				</div>
+										<div class="cb-two cb-column clearfix">
+					<div id="text-4" class="cb-footer-widget codetipi-15zine-widget clearfix widget_text"><h3 class="cb-footer-widget-title cb-widget-title widget-title title">Submit To The Daily</h3>			<div class="textwidget"><a href="/about/submit-to-the-daily/"><button class="base-btn button-primary btn-block" type="button">Submit an Article</button></a>
+<br></br>
+<a href="/about/editorial-guidelines/"><button class="base-btn button-primary btn-block" type="button">Editorial Guidelines</button></a>
+
+</div>
+		</div>				</div>
+										<div class="cb-three cb-column clearfix">
+					<div id="text-56" class="cb-footer-widget codetipi-15zine-widget clearfix widget_text"><h3 class="cb-footer-widget-title cb-widget-title widget-title title">Subscribe</h3>			<div class="textwidget"><p><a href="https://cloud.communications.case.edu/thedailysubscribe" target="_blank" rel="noopener"><button class="base-btn button-primary btn-block" type="button">Subscribe to <i>The Daily</i></button></a></p>
+</div>
+		</div><div id="text-3" class="cb-footer-widget codetipi-15zine-widget clearfix widget_text"><h3 class="cb-footer-widget-title cb-widget-title widget-title title">Follow Us</h3>			<div class="textwidget"><div class="socialframe"><a href="https://www.facebook.com/casewesternreserve/">
+  <div class="socialbuttonround"><i class="fab fa-facebook-f  sociallogos"></i></div>
+</a></div>
+
+<div class="socialframe"><a href="https://twitter.com/cwru/">
+  <div class="socialbuttonround"><i class="fab fa-twitter  sociallogos"></i></div>
+</a></div>
+
+<div class="socialframe"><a href="https://www.instagram.com/cwru/">
+  <div class="socialbuttonround"><i class="fab fa-instagram  sociallogos"></i></div>
+</a></div>
+
+<div class="socialframe"><a href="https://www.youtube.com/user/case/">
+  <div class="socialbuttonround"><i class="fab fa-youtube sociallogos"></i></div>
+</a></div></div>
+		</div>				</div>
+								</div>
+			
+
+
+    <!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M6NQD8');</script>
+    <!-- End Google Tag Manager -->
+    
+    <!-- <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700,600italic,400italic,700italic' rel='stylesheet' type='text/css'> -->
+    
+    
+    <link href= 'https://dudbm6bcnmy8e.cloudfront.net/cwru/fonts/Arizona-Fonts/arizona' rel='stylesheet' type='text/css'>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="https://dailymedia.case.edu/wp-content/uploads/2016/08/22174157/Untitled-2-1-2.ico">
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-83752054-1', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+
+
+
+
+
+<script>
+    // As soon as the page loads
+    (function($) {
+    $(document).ready(function() {
+        
+        // Add GTM code just after the first body tag
+        var gtmCodeAdd = $('body').prepend('<!-- Google Tag Manager (noscript) --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6NQD8" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) -->');
+        // Add the CWRU logo to the top right of the page
+        var topMenuLogo = $('#cb-top-menu>div').prepend("<div style=''><a href='http://case.edu/' style='padding-left:10px;'><img style='height:28.91px;margin-top:19px;margin-bottom:19px;' src='https://dudbm6bcnmy8e.cloudfront.net/cwru/img/cwru_logo_primary_white.svg'></a></div>");
+        // Style the search bars (standard and mobile)
+        var searchBarStyled = $('#cb-logo-box').append("<div id='mainSearchBox'><form role='search' method='get' class='cb-search' action='https://thedaily.case.edu/'><label for='headersearch' style='display:none;'>Search</label><input id='headersearch' type='text' class='cb-search-field cb-font-header' placeholder='Search..' value='' name='s' title='' autocomplete='off'><button aria-label='Submit Search' class='cb-search-submit' type='submit' value=''><i class='fa fa-search'></i></button></form></div>");
+        var mobSearchBarStyled = $('ul.cb-mobile-nav').prepend("<li><div id='mobSearchBox'><form role='search' method='get' class='cb-search' action='https://thedaily.case.edu/'><label for='headersearch' style='display:none;'>Search</label><input id='headersearch' type='text' class='cb-search-field cb-font-header' placeholder='Search..' value='' name='s' title='' autocomplete='off'><button aria-label='Submit Search' class='cb-search-submit' type='submit' value=''><i class='fa fa-search'></i></button></form></div></li>");
+        var mobSearchBarStyled = $('#cb-nav-bar>div>ul>li.menu-item-has-children>a').append(" <i class='fa fa-angle-down' style='font-weight:600;'></i>");
+        // Mobile menu buttons
+        var mobdropdownbuttons = $('span.cb-icon-plus').each(function() {
+            $(this).addClass('fa');
+        });
+        // Add buttons to the footer
+        var subscriptionButton = $('#subscribe-submit>input:last').addClass("base-btn button-primary");
+        var exitMobileMenuButton = $('#cb-mob-close>i').removeClass('cb-times').addClass('fa-times');
+        // Ensure that each page has proper top spacing
+        var topSpacer = $('#cb-section-a').addClass("cb-fis-pad");
+        // Hold onto the details of the social feed
+        var socialHolder = $('#cb-footer div.cb-under-footer');
+        // Flip the footer and instagram feed
+        var socialFlipper = $('#cb-footer').prepend(socialHolder);
+        // // Remove all placeholder images
+        var placeholderRemover = $("div.cb-mask:has(img[alt*='placeholder'])").each(function() {
+            $(this).css("display", "none");
+            $(this).next().css({"width": "100%", "padding-left": "0px"});
+        });
+        // Adjust page title dynamically
+        var pagetitle = $('title');
+        if (pagetitle[0].innerHTML != 'The Daily | Case Western Reserve University') {
+            //adjust the title
+            var pagetitleholder = pagetitle[0].innerHTML;
+            if (pagetitle[0].innerHTML.search(" Archives") == -1) {
+                pagetitleholder += " The Daily";
+            }
+            pagetitleholder = pagetitleholder.replace(" Archives", "");
+            if (pagetitleholder.length < 22) {
+                pagetitleholder += " | Case Western Reserve University";
+            }
+            pagetitle[0].innerHTML = pagetitleholder;
+        }
+        // If the page is a Community Posting - add the disclaimer to the page
+        var checkTheCategory = $('.cb-category').each(function() {
+            if ($(location).attr('href') != 'https://thedaily.case.edu/category/community-postings/') {
+                if ($(this).find('a').attr('href') == 'https://thedaily.case.edu/category/community-postings/') {
+                    // append the disclaimer
+                    $(this).parent().before('<div class="community-postings-disclaimer"><p><em>Items that appear in the Community Postings section are submitted by visitors. Posts are reviewed to ensure they are appropriate for our audience, but typically are not edited by University Marketing and Communications.</em></p></div>');
+                }
+            }
+            if ($(location).attr('href') != 'https://thedaily.case.edu/category/events/') {
+                if ($(this).find('a').attr('href') == 'https://thedaily.case.edu/category/events/') {
+                    // append the disclaimer
+                    $(this).parent().parent().next().after('<div class="events-disclaimer"><p><em>Case Western Reserve University is committed to academic freedom and promoting diversity of thought. The views of those who speak on our campus do not necessarily reflect the views of the university administration or any other segment of the university community.</em></p></div>');
+                }
+            }
+        });
+if ($(".category-20")[0]) {
+            // append the disclaimer
+            $('.cb-pagination').after('<div class="events-disclaimer"><p><em>Case Western Reserve University is committed to academic freedom and promoting diversity of thought. The views of those who speak on our campus do not necessarily reflect the views of the university administration or any other segment of the university community.</em></p></div>');
+        }
+
+        // Search for areas to drop buttons in the main content
+        var hreftest = $(location).attr('href').split('/');
+        if (hreftest[3] != '') {
+            var logoAdjuster = $('#logo>a').wrap('<h1></h1>');
+        };
+        if ((hreftest[3] != '') && (hreftest[4] == '') && ((hreftest[3] != 'events') && (hreftest[3] != 'about') && (hreftest[3] != 'community-postings') && (hreftest[3] != 'community-postings-form') && (hreftest[3] != 'connect'))) {
+            var mainContentButtons = $('div.cb-main>div').each(function() {
+                var hrefholder = $(this).find('div.cb-module-header>h2').text();
+                var cleanlink = ((((hrefholder.replace(", ","-")).replace(" & ","-")).replace(" ","-")).toLowerCase());
+                switch (cleanlink) {
+                    case 'athletics':
+                        $(this).append('<a href="/tag/' + cleanlink + '"><button class="base-btn button-primary module-btn">See all ' + hrefholder + ' Articles</button></a>');
+                        break;
+                    case 'featured':
+                        $(this).append('<a href="/category/' + cleanlink + '"><button class="base-btn button-primary module-btn">See all ' + hrefholder + ' Articles</button></a>');
+                        break;
+                    case 'media-mentions':
+                        $(this).append('<a href="/category/media"><button class="base-btn button-primary module-btn">See all ' + hrefholder + '</button></a>');
+                        break;
+case 'people':
+                        $(this).append('');
+                        break;
+                    case 'in-memory':
+                        $(this).append('<a href="/tag/obituary"><button class="base-btn button-primary module-btn">See all Articles Written in Memory</button></a>');
+                        break;
+                    case 'campus-updates':
+                        $(this).append('<a href="/category/' + hreftest[3] + "/" + cleanlink + '"><button class="base-btn button-primary module-btn">See all ' + hrefholder + '</button></a>');
+                        break;
+                    case 'awards':
+                        $(this).append('<a href="/category/' + hreftest[3] + "/" + cleanlink + '"><button class="base-btn button-primary module-btn">See all Award Recognitions</button></a>');
+                        break;
+                    case 'publications-presentations':
+                        $(this).append('<a href="/category/' + hreftest[3] + "/" + cleanlink + '"><button class="base-btn button-primary module-btn">See all ' + hrefholder + '</button></a>');
+                        break;
+                    case 'appointments':
+                        $(this).append('<a href="/category/' + hreftest[3] + "/" + cleanlink + '"><button class="base-btn button-primary module-btn">See all ' + hrefholder + '</button></a>');
+                        break;
+                    default:
+                        $(this).append('<a href="/category/' + hreftest[3] + "/" + cleanlink + '"><button class="base-btn button-primary module-btn">See all ' + hrefholder + ' Articles</button></a>');
+                        break;
+                };
+            });
+        };
+        if ((hreftest[3] == 'category') && (hreftest[4] == 'community-postings')) {
+            var fixTheSidebar = $('aside.cb-sidebar').empty();
+            fixTheSidebar.append('<div id="text-32" class="cb-sidebar-widget widget_text"><h3 class="cb-sidebar-widget-title cb-widget-title">Quick Links</h3><div class="textwidget"><div><a href="/community-postings-form"><button class="base-btn button-primary btn-block" type="button">Submit a Posting</button></a></div></div></div>');
+        };
+        if ($('#cb-featured-image.cb-gallery-post-wrap').length > 0) {
+            var fixTheTitle = $('#cb-featured-image>div.cb-entry-header.cb-meta');
+            var placeTheTitle = $('div.cb-post-wrap div.cb-main').prepend(fixTheTitle);
+            var fixTheCaption = $('span.cb-caption').css({"width": "100%", "max-width": "100%", "text-align": "center"});
+        };
+        if (hreftest[3] == 'events') {
+            // Hold onto the details of the calendar
+            var calendarHolder = $('.stec').parent();
+            // Change places for the calendar on the Calendar Page
+            var calendarFlipper = $('.cb-main div.cb-contents').prepend(calendarHolder);
+            // Change places for the calendar on the Events Page
+            var calendarFlipper = $('#cb-section-a div.cb-contents').prepend(calendarHolder);
+            // Choose not to display day and week views
+            var calendarViewFlipper = $("li[data-view='day'], li[data-view='week']").each(function() {
+                $(this).css("display", "none");
+            });
+            // Change the filter icon to text
+            var calendarFilterIconChanger = $('i.fa-calendar').replaceWith("<p>Filter by Subject</p>");
+            // Final Removals
+            var calendarMonthOrderChanger = $('.stec-top-menu-layouts li:first-child').insertAfter('.stec-top-menu-layouts li:nth-child(2)');
+            $(window).on("load, resize", function() {
+                var viewportWidth = $(window).width();
+                if (viewportWidth < 768) {
+                    $("li[data-view='month']").removeClass("active");
+                    $("li[data-view='agenda']").addClass("active");
+                } else {
+                    $("li[data-view='month']").addClass("active");
+                    $("li[data-view='agenda']").removeClass("active");
+                }
+            });  
+        };
+        // window.setTimeout(hider, 5000);
+        // function hider() {
+        //     $('iframe').each(function() {
+        //         if (this.src.split('/')[2] == 'disqusads.com') {
+        //             $(this).hide();
+        //         }
+        //     });
+        // }
+    });
+    // Watch all of the clicks that happen in the document
+    $(document).on('click', function(event) {
+        // If the menu is open and you click away from it
+        if (!$(event.target).closest('#cb-mob-menu, #cb-top-menu').length) {
+            // Hide the menus.
+            $('body').removeClass('cb-mob-op');
+        }
+    });
+    var urlHolder = window.location.href;
+    $("li a[href='" + urlHolder + "']").addClass('current').parentsUntil('ul.cb-main-nav').slice(3).find(">a").addClass('current');
+
+    if($('.featured-image-caption').length > 0) {
+        ($('.featured-image-caption')[0].innerText == "") ? $('.featured-image-caption').css("display","none") : "";
+        console.log($('.featured-image-caption'));
+    }
+    
+
+})(jQuery);
+
+</script>
+
+
+
+
+</footer>
+</div> <!-- end .site-inner -->
+</div>
+<div id="mob-menu-wrap" class="mob-menu-wrap mobile-navigation-dd tipi-l-0 site-skin-2 site-img-1">
+	<div class="bg-area">
+		<div class="content-wrap">
+			<div class="content">
+				<div class="logo-x-wrap tipi-flex vertical-c">
+										<a href="#" class="mob-tr-close tipi-close-icon"><i class="codetipi-15zine-i-x" aria-hidden="true"></i></a>
+				</div>
+				<nav class="mobile-navigation mobile-navigation-1"><ul id="menu-mobile" class="menu-mobile vertical-menu"><li id="menu-item-51157" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropper standard-drop menu-item-51157"><a href="https://thedaily.case.edu/campus-community/">Campus &#038; Community</a>
+<ul class="sub-menu">
+	<li id="menu-item-53666" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper standard-drop menu-item-53666"><a href="https://thedaily.case.edu/category/campus-community/campus-updates/">Campus Updates</a></li>
+	<li id="menu-item-53667" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper standard-drop menu-item-53667"><a href="https://thedaily.case.edu/category/campus-community/faculty-staff/">faculty &#038; staff</a></li>
+	<li id="menu-item-53668" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper standard-drop menu-item-53668"><a href="https://thedaily.case.edu/category/campus-community/student-life/">Student Life</a></li>
+	<li id="menu-item-53669" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper standard-drop menu-item-53669"><a href="https://thedaily.case.edu/category/campus-community/university-circle/">University Circle</a></li>
+</ul>
+</li>
+<li id="menu-item-51158" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-51109 current_page_item menu-item-has-children dropper standard-drop menu-item-51158"><a href="https://thedaily.case.edu/university-news/" aria-current="page">University News</a>
+<ul class="sub-menu">
+	<li id="menu-item-53692" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper standard-drop menu-item-53692"><a href="https://thedaily.case.edu/category/awards/">Awards</a></li>
+	<li id="menu-item-53693" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper standard-drop menu-item-53693"><a href="https://thedaily.case.edu/category/publications-presentations/">Publications &amp; Presentations</a></li>
+	<li id="menu-item-53694" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper standard-drop menu-item-53694"><a href="https://thedaily.case.edu/category/appointments/">Appointments</a></li>
+	<li id="menu-item-60708" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper standard-drop menu-item-60708"><a href="https://thedaily.case.edu/category/op-ed/">Op-ed</a></li>
+</ul>
+</li>
+<li id="menu-item-51159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropper standard-drop menu-item-51159"><a href="https://thedaily.case.edu/research/">Research</a>
+<ul class="sub-menu">
+	<li id="menu-item-53688" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper standard-drop menu-item-53688"><a href="https://thedaily.case.edu/category/research/health-wellness/">Health &amp; Wellness</a></li>
+	<li id="menu-item-53689" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper standard-drop menu-item-53689"><a href="https://thedaily.case.edu/category/research/science-tech/">Science &amp; Tech</a></li>
+	<li id="menu-item-53690" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper standard-drop menu-item-53690"><a href="https://thedaily.case.edu/category/research/business-law-politics/">Business, Law &amp; Politics</a></li>
+	<li id="menu-item-53691" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper standard-drop menu-item-53691"><a href="https://thedaily.case.edu/category/research/humanities-art-social-sciences/">Humanities, Art &amp; Social Sciences</a></li>
+</ul>
+</li>
+<li id="menu-item-158343" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper standard-drop menu-item-158343"><a href="https://thedaily.case.edu/category/events/">Events</a></li>
+<li id="menu-item-51167" class="menu-item menu-item-type-post_type menu-item-object-page dropper standard-drop menu-item-51167"><a href="https://thedaily.case.edu/people/">People</a></li>
+<li id="menu-item-51172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropper standard-drop menu-item-51172"><a href="https://thedaily.case.edu/about/">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-51173" class="menu-item menu-item-type-post_type menu-item-object-page dropper standard-drop menu-item-51173"><a href="https://thedaily.case.edu/about/submit-to-the-daily/">Submit to The Daily</a></li>
+	<li id="menu-item-51174" class="menu-item menu-item-type-post_type menu-item-object-page dropper standard-drop menu-item-51174"><a href="https://thedaily.case.edu/about/editorial-guidelines/">Editorial Guidelines</a></li>
+</ul>
+</li>
+</ul></nav><!-- .mobile-navigation -->				<ul class="menu-icons horizontal-menu">
+									</ul>
+			</div>
+		</div>
+		<div class="background"></div>	</div>
+</div>
+<div id="modal" class="modal-wrap inactive dark-overlay">
+	<span class="tipi-overlay tipi-overlay-modal"></span>
+	<div class="content tipi-vertical-c wrap">
+		<div class="content-search search-form-wrap content-block tipi-xs-12 tipi-m-8">
+			<form method="get" class="search tipi-flex" action="https://thedaily.case.edu/">
+	<input type="search" class="search-field font-h" placeholder="Search" value="" name="s" autocomplete="off" aria-label="search form">
+	<button class="tipi-i-search-thin search-submit" type="submit" value="" aria-label="search"><i class="codetipi-15zine-i-search"></i></button>
+</form>
+			<div class="search-hints">
+				<span class="search-hint">
+					Type to search or hit ESC to close				</span>
+			</div>
+			<div class="content-found-wrap"><div class="content-found"></div><div class="button-wrap"><a class="search-all-results button-arrow-r button-arrow tipi-button" href="#"><span class="button-title">See all results</span><i class="codetipi-15zine-i-chevron-right"></i></a></div></div>		</div>
+		<div class="content-lwa content-block site-img-1 site-skin-2">
+				</div>
+		<div class="content-custom content-block">
+		</div>
+	</div>
+	<a href="#" class="close tipi-x-wrap tipi-x-outer"><i class="codetipi-15zine-i-x"></i></a>
+
+</div>
+<span id="tipi-overlay" class="tipi-overlay tipi-overlay-base tipi-overlay-dark"><a href="#" class="close tipi-x-wrap"><i class="codetipi-15zine-i-x"></i></a></span>
+	<!-- Instagram Feed JS -->
+<script type="text/javascript">
+var sbiajaxurl = "https://thedaily.case.edu/wp-admin/admin-ajax.php";
+</script>
+<script type="application/ld+json">{"@context": "http://schema.org",
+	"@type": "WebPage",
+	"name": "The Daily",
+	"description": "Case Western Reserve University","url": "https://thedaily.case.edu/","potentialAction": {
+	"@type": "SearchAction",
+	"target": "https://thedaily.case.edu/?s=&#123;search_term&#125;",
+	"query-input": "required name=search_term"}}</script><style id='codetipi-15zine-mm-style-inline-css' type='text/css'>
+
+			.main-menu-bar-color-1 .main-menu .mm-color.menu-item-51108.active > a,
+			.main-menu-bar-color-1.mm-ani-0 .main-menu .mm-color.menu-item-51108:hover > a,
+			.main-menu-bar-color-1 .main-menu .current-menu-item.menu-item-51108 > a
+			{ background: #ffffff; }.main-navigation .menu-item-51108 .menu-wrap > * { border-top-color: #ffffff!important; }
+
+			.main-menu-bar-color-1 .main-menu .mm-color.menu-item-51111.active > a,
+			.main-menu-bar-color-1.mm-ani-0 .main-menu .mm-color.menu-item-51111:hover > a,
+			.main-menu-bar-color-1 .main-menu .current-menu-item.menu-item-51111 > a
+			{ background: #ffffff; }.main-navigation .menu-item-51111 .menu-wrap > * { border-top-color: #ffffff!important; }
+
+			.main-menu-bar-color-1 .main-menu .mm-color.menu-item-51148.active > a,
+			.main-menu-bar-color-1.mm-ani-0 .main-menu .mm-color.menu-item-51148:hover > a,
+			.main-menu-bar-color-1 .main-menu .current-menu-item.menu-item-51148 > a
+			{ background: #ffffff; }.main-navigation .menu-item-51148 .menu-wrap > * { border-top-color: #ffffff!important; }
+
+			.main-menu-bar-color-1 .main-menu .mm-color.menu-item-141101.active > a,
+			.main-menu-bar-color-1.mm-ani-0 .main-menu .mm-color.menu-item-141101:hover > a,
+			.main-menu-bar-color-1 .main-menu .current-menu-item.menu-item-141101 > a
+			{ background: #ffffff; }.main-navigation .menu-item-141101 .menu-wrap > * { border-top-color: #ffffff!important; }
+
+			.main-menu-bar-color-1 .main-menu .mm-color.menu-item-51152.active > a,
+			.main-menu-bar-color-1.mm-ani-0 .main-menu .mm-color.menu-item-51152:hover > a,
+			.main-menu-bar-color-1 .main-menu .current-menu-item.menu-item-51152 > a
+			{ background: #ffffff; }.main-navigation .menu-item-51152 .menu-wrap > * { border-top-color: #ffffff!important; }
+
+			.main-menu-bar-color-1 .main-menu .mm-color.menu-item-51118.active > a,
+			.main-menu-bar-color-1.mm-ani-0 .main-menu .mm-color.menu-item-51118:hover > a,
+			.main-menu-bar-color-1 .main-menu .current-menu-item.menu-item-51118 > a
+			{ background: #ffffff; }.main-navigation .menu-item-51118 .menu-wrap > * { border-top-color: #ffffff!important; }
+</style>
+<script type='text/javascript' src='https://thedaily.case.edu/wp-content/themes/15zine/assets/js/js.cookie.min.js?ver=3.3.9.8' id='js-cookie-js'></script>
+<script type='text/javascript' src='https://thedaily.case.edu/wp-content/themes/15zine/assets/js/swipebox.min.js?ver=1.4.4.1' id='swipebox-js'></script>
+<script type='text/javascript' src='https://thedaily.case.edu/wp-content/themes/15zine/assets/js/gsap/TweenLite.min.js?ver=1.20.5' id='tween-lite-js'></script>
+<script type='text/javascript' src='https://thedaily.case.edu/wp-content/themes/15zine/assets/js/gsap/CSSPlugin.min.js?ver=1.20.5' id='css-plugin-js'></script>
+<script type='text/javascript' src='https://thedaily.case.edu/wp-content/themes/15zine/assets/js/flickity.pkgd.min.js?ver=2.1.2' id='flickity-js'></script>
+<script type='text/javascript' src='https://thedaily.case.edu/wp-content/themes/15zine/assets/js/flickity-full-screen.min.js?ver=1.1.0' id='flickity-full-screen-js'></script>
+<script type='text/javascript' src='https://thedaily.case.edu/wp-content/themes/15zine/assets/js/flickity-fade.min.js?ver=1.0.0' id='flickity-fade-js'></script>
+<script type='text/javascript' src='https://thedaily.case.edu/wp-content/themes/15zine/assets/js/scrollmagic.min.js?ver=2.0.5' id='scroll-magic-js'></script>
+<script type='text/javascript' src='https://thedaily.case.edu/wp-content/themes/15zine/assets/js/sticky-kit.min.js?ver=2.2.3' id='sticky-kit-js'></script>
+<script type='text/javascript' src='https://thedaily.case.edu/wp-content/themes/15zine/assets/js/menu-aim.min.js?ver=1.9.0' id='menu-aim-js'></script>
+<script type='text/javascript' id='codetipi-15zine-functions-js-extra'>
+/* <![CDATA[ */
+var codetipi15zineJS = {"root":"https:\/\/thedaily.case.edu\/wp-json\/codetipi-15zine\/v1\/","nonce":"73e18ea1cc","i18n":{"embedError":"There was a problem with your embed code. Please refer to the documentation for help.","loadMore":"Load More","noMore":"No More Content"},"args":{"path":"\/","slider":false,"disqus":"https-thedaily-case-edu","iplCached":true,"iplMob":true,"lazy":false,"lightbox":true,"pluginsUrl":"https:\/\/thedaily.case.edu\/wp-content\/plugins","cookieDuration":90,"frontpage":false,"ipl":[]},"qry":{"posts_per_page":"10","paged":1}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://thedaily.case.edu/wp-content/themes/15zine/assets/js/functions.js?ver=3.3.9.8' id='codetipi-15zine-functions-js'></script>
+<script type='text/javascript' id='codetipi-15zine-functions-js-after'>
+	var codetipi_15zine_85942 = {
+		id: 85942,
+		next: 2,
+		prev: 0,
+		target: 0,
+		mnp: 0,
+		p: 21,
+		is110: 0,
+		counter: 0,
+		specific: "",
+		counter_class: "",
+		post_subtitle: "",
+		excerpt_off: 0,
+		excerpt_length: 0,
+		excerpt_full: 0,
+		review_size: 5,
+		img_shape: 0,
+		byline_off: 0,
+		fi_off: 0,
+		ppp: 2,
+		args: {"cat":"5111","posts_per_page":"2","tag__in":"","post__in":"","offset":"","post_type":"","tax_query":"","tipi":"latest","review":"","trending":""}	};
+	
+	var codetipi_15zine_55045 = {
+		id: 55045,
+		next: 2,
+		prev: 0,
+		target: 0,
+		mnp: 0,
+		p: 21,
+		is110: 0,
+		counter: 0,
+		specific: "",
+		counter_class: "",
+		post_subtitle: "",
+		excerpt_off: 0,
+		excerpt_length: 0,
+		excerpt_full: 0,
+		review_size: 5,
+		img_shape: 0,
+		byline_off: 0,
+		fi_off: 0,
+		ppp: 2,
+		args: {"cat":"5170","posts_per_page":"2","tag__in":"","post__in":"","offset":"","post_type":"","tax_query":"","tipi":"latest","review":"","trending":""}	};
+	
+	var codetipi_15zine_25286 = {
+		id: 25286,
+		next: 2,
+		prev: 0,
+		target: 0,
+		mnp: 0,
+		p: 21,
+		is110: 0,
+		counter: 0,
+		specific: "",
+		counter_class: "",
+		post_subtitle: "",
+		excerpt_off: 0,
+		excerpt_length: 0,
+		excerpt_full: 0,
+		review_size: 5,
+		img_shape: 0,
+		byline_off: 0,
+		fi_off: 0,
+		ppp: 2,
+		args: {"cat":"2","posts_per_page":"2","tag__in":"","post__in":"","offset":"","post_type":"","tax_query":"","tipi":"latest","review":"","trending":""}	};
+	
+	var codetipi_15zine_19184 = {
+		id: 19184,
+		next: 2,
+		prev: 0,
+		target: 0,
+		mnp: 0,
+		p: 21,
+		is110: 0,
+		counter: 0,
+		specific: "",
+		counter_class: "",
+		post_subtitle: "",
+		excerpt_off: 0,
+		excerpt_length: 0,
+		excerpt_full: 0,
+		review_size: 5,
+		img_shape: 0,
+		byline_off: 0,
+		fi_off: 0,
+		ppp: 2,
+		args: {"cat":"50","posts_per_page":"2","tag__in":"","post__in":"","offset":"","post_type":"","tax_query":"","tipi":"latest","review":"","trending":""}	};
+	
+	var codetipi_15zine_47110 = {
+		id: 47110,
+		next: 2,
+		prev: 0,
+		target: 0,
+		mnp: 0,
+		p: 21,
+		is110: 0,
+		counter: 0,
+		specific: "",
+		counter_class: "",
+		post_subtitle: "",
+		excerpt_off: 0,
+		excerpt_length: 0,
+		excerpt_full: 0,
+		review_size: 5,
+		img_shape: 0,
+		byline_off: 0,
+		fi_off: 0,
+		ppp: 2,
+		args: {"cat":"14","posts_per_page":"2","tag__in":"","post__in":"","offset":"","post_type":"","tax_query":"","tipi":"latest","review":"","trending":""}	};
+	
+	var codetipi_15zine_41916 = {
+		id: 41916,
+		next: 2,
+		prev: 0,
+		target: 0,
+		mnp: 0,
+		p: 21,
+		is110: 0,
+		counter: 0,
+		specific: "",
+		counter_class: "",
+		post_subtitle: "",
+		excerpt_off: 0,
+		excerpt_length: 0,
+		excerpt_full: 0,
+		review_size: 5,
+		img_shape: 0,
+		byline_off: 0,
+		fi_off: 0,
+		ppp: 2,
+		args: {"cat":"53","posts_per_page":"2","tag__in":"","post__in":"","offset":"","post_type":"","tax_query":"","tipi":"latest","review":"","trending":""}	};
+	
+	var codetipi_15zine_15433 = {
+		id: 15433,
+		next: 2,
+		prev: 0,
+		target: 0,
+		mnp: 0,
+		p: 21,
+		is110: 0,
+		counter: 0,
+		specific: "",
+		counter_class: "",
+		post_subtitle: "",
+		excerpt_off: 0,
+		excerpt_length: 0,
+		excerpt_full: 0,
+		review_size: 5,
+		img_shape: 0,
+		byline_off: 0,
+		fi_off: 0,
+		ppp: 2,
+		args: {"cat":"5189","posts_per_page":"2","tag__in":"","post__in":"","offset":"","post_type":"","tax_query":"","tipi":"latest","review":"","trending":""}	};
+	
+</script>
+<script type='text/javascript' src='https://thedaily.case.edu/wp-content/themes/15zine-child/assets/js/functions.js?ver=1.0' id='custom-script-js'></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"6a0f9ff2bc","applicationID":"248966996","transactionName":"ZFdUZBEFWUcDWhcIXl0dd1MXDVhaTUkCBlQeAwNKCgpSGQBMCg1VVkA=","queueTime":0,"applicationTime":1389,"atts":"SBBXElkfSkk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html> <!-- The End. what a ride! -->
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+
+Served from: appserver-1b24f686-nginx-0bf35fbe4ed445dbbc9ff09572f1c8bf @ 2024-04-15 19:48:22 by W3 Total Cache
+-->
