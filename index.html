@@ -38,64 +38,126 @@
               answer: "All of the above"
             
              },
-             const quizData = [
+        
              {
-              question :"What is the rule of law"?,
-              options : {"Everyone must follow the law, Leaders must obey the law, Government must obey the law, Answer A and B"},
+              question:"What is the rule of law"?,
+              options: ["Everyone must follow the law, Leaders must obey the law, Government must obey the law, Answer A and B"],
               answer: "Everyone must follow the law"
         
             },
              {
-              question :"Who makes federal laws?"?,
-              options : {"Congress, Senate and House of Representatives,  U.S or national legislature, The president makes them"},
+              question:"Who makes federal laws?"?,
+              options: ["Congress, Senate and House of Representatives,  U.S or national legislature, The president makes them"],
               answer: "Congress"
              },
              {
-             question :"What ocean is on the west coast of the U.S"?,
-              options : {"Atlantic ocean, Senate and House of Representatives,  U.S or national legislature, The president makes them"},
+             question:"What ocean is on the west coast of the U.S"?,
+              options: ["Atlantic ocean, Senate and House of Representatives,  U.S or national legislature, The president makes them"],
               answer: "Congress"  
              },
              {
-             question :"What ocean is on the west coast of the U.S"?,
-              options : {"Atlantic ocean, Senate and House of Representatives,  U.S or national legislature, The president makes them"},
+             question:"What ocean is on the west coast of the U.S"?,
+              options: ["Atlantic ocean, Senate and House of Representatives,  U.S or national legislature, The president makes them"],
               answer: "Congress"
             },
             {
-              question :"What did Martin Luther King Jr do"?,
-              options : {"Fought for civil rights,Worked for equality for all Americans, Fought for amendment rights, None of the above"}
-
-              answer: "Fought for civil rights"
+              question:"What did Martin Luther King Jr do"?,
+              options: ["Fought for civil rights,Worked for equality for all Americans, Fought for amendment rights, None of the above"]
+               answer: "Fought for civil rights"
             },
             {
-              question :"What did Martin Luther King Jr do"?,
-              options : {"Fought for civil rights,Worked for equality for all Americans, Fought for amendment rights, None of the above"}
+              question:"What did Martin Luther King Jr do"?,
+              options: ["Fought for civil rights,Worked for equality for all Americans, Fought for amendment rights, None of the above"],
               answer: "Fought for civil rights"
         
             },
             { 
-               question :" Name one state that borders Canada"?,
-              options: {"Maine, Pennsylvania, Michigan, All of the above"}
+               question:" Name one state that borders Canada"?,
+              options: ["Maine, Pennsylvania, Michigan, All of the above"],
               answer: "All of the above"
             },
             {
-               question : "What is the capital of the United states?"
-               options : {"Albany, New York, Washington DC, Washington, New Orleans, Las Vegas"}
+               question: "What is the capital of the United states?"
+               options: ["Albany, New York, Washington DC, Washington, New Orleans, Las Vegas"],
                answer: "Washington D.C"
 
-            }
+            },
             {
-              question :  "Who lived in America before the Europeans arrived?"
-              options : {"Americans Indians, Native Americans, Americans, Europeans"}
+              question:  "Who lived in America before the Europeans arrived?"
+              options: ["Americans Indians, Native Americans, Americans, Europeans"],
                answer: "Native Americans"
             },
             {
-              question :  " Who wrote the Declaration of Independence?"
-              options : {"George Washington, Thomas Jefferson, Abraham Lincoln, "}
+              question:  " Who wrote the Declaration of Independence?"
+              options: ["George Washington, Thomas Jefferson, Abraham Lincoln"],
                answer: "George Washington"
             },
-            ]
-             ];
+            {
+              question:  "Why does the flag have 50 stars?"
+              options: ["The stars represent unity,There are 50 states, The stars make the flag look appealing, None of the above"],
+              answer: "There are 50 states"
+             },
+             {
+              question: " Where is the Statue of Liberty?"
+              options: ["Liberty Island, Ellis Island, Union City, New Jersey"],
+             }
+             {
+              question: "When do we celebrate Independence Day?"
+              options: ["July 5, July 4, July 14,June 24"],
+              answer: "July 4"
+             },
+             {
+              question: ". Who did the United States fight in World War II?"
+              options: ["Germany, Russia, British, Japan"],
+              answer: "Germany"
+             },
+            ];
 
+            const questionElement = document.getElementById("question");
+            const optionsElement = document.getElementById("options");
+            const submitButton = document.getElementById("submit");
+  
+  let currentQuestion = 0;
+  let score = 0;
+  
+  function showQuestion() {
+    const question = quizData[currentQuestion];
+    questionElement.innerText = question.question;
+  
+    optionsElement.innerHTML = "";
+    question.options.forEach(option => {
+      const button = document.createElement("button");
+      button.innerText = option;
+      optionsElement.appendChild(button);
+      button.addEventListener("click", selectAnswer);
+    });
+  }
+  
+  function selectAnswer(e) {
+    const selectedButton = e.target;
+    const answer = quizData[currentQuestion].answer;
+  
+    if (selectedButton.innerText === answer) {
+      score++;
+    }
+  
+    currentQuestion++;
+  
+    if (currentQuestion < quizData.length) {
+      showQuestion();
+    } else {
+      showResult();
+    }
+  }
+  
+  function showResult() {
+    quiz.innerHTML = `
+      <h1>Quiz Completed!</h1>
+      <p>Your score: ${score}/${quizData.length}</p>
+    `;
+  }
+  
+  showQuestion();
             
             
             </div>
