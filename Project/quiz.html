@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constitution Quiz</title>
+    <link rel="stylesheet" href="quizstyle.css">
+</head>
+<body>
+
+    <div id="quiz">
+        <h1>Practice U.S. Citizenship Civics Quiz</h1>
+        <div id="question"></div>
+        <div id="options"></div>
+        <button id="submit" style="display:none;">Submit</button>
+    </div>
+
+    <div class="test">
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const submitButton = document.getElementById('submit');
+    const optionsContainer = document.getElementById('options');
+    const questionElement = document.getElementById('question');
+    const quiz = document.getElementById('quiz');
+    
+   
+    const quizData = [
+        {
+          question: "What does the Constitution do?",
+          options: ["Set up the government", "Defines the government", "Protects basic rights of Americans", "All of the above"],
+          answer: "All of the above"
+        
+         },
+         {
+          question :" What do we call the first ten amendments to the Constitution?",
+          options : ["The Bill of Declaration", "The Bill of Rights", "The Bill of Constitution", "None"],
+          answer: "The Bill of Rights"
+        },
+        {
+          question :"What did the Declaration of Independence do?",
+          options : ["Announced our independence", "Defines the government", "Protects basic rights of Americans", "All of the above"],
+          answer: "All of the above"
+        
+         },
+    
+         {
+          question:"What is the rule of law?",
+          options: ["Everyone must follow the law", "Leaders must obey the law", "Government must obey the law", "Answer A and B"],
+          answer: "Everyone must follow the law"
+    
+        },
+         {
+          question:"Who makes federal laws?",
+          options: ["Congress", "Senate and House of Representatives",  "U.S or national legislature", "The president makes them"],
+          answer: "Congress"
+         },
+         {
+         question:"What ocean is on the west coast of the U.S?",
+          options: ["Atlantic ocean", "Pacific Ocean",  "Indian Ocean", "Arctic Ocean"],
+          answer: "Pacific Ocean"  
+         },
+         {
+         question:"Name one branch/part of the U.S. government.",
+          options: ["Legislative", "Federal",  "National", "Local"],
+          answer: "Legislative"
+        },
+        {
+          question:"When is the last day you can send in federal income tax forms?",
+          options: ["November 24", "April 15", "July 4", "None of the above"],
+          answer: "April 15"
+        },
+        {
+          question:"What did Martin Luther King Jr do?",
+          options: ["Fought for civil rights", "Worked for equality for all Americans", "Fought for amendment rights", "None of the above"],
+          answer: "Fought for civil rights"
+    
+        },
+        { 
+           question:" Name one state that borders Canada?",
+          options: ["Maine", "Pennsylvania", "Michigan", "All of the above"],
+          answer: "All of the above"
+        },
+        {
+           question: "What is the capital of the United states?",
+           options: ["Albany, New York", "Washington DC" , "New Orleans, Louisiana", "Las Vegas, Nevada"],
+           answer: "Washington DC"
+
+        },
+        {
+          question: "Who lived in America before the Europeans arrived?",
+          options: ["American Indians", "Native Americans", "Americans", "Europeans"],
+           answer: "Native Americans"
+        },
+        {
+          question:  "Who wrote the Declaration of Independence?",
+          options: ["George Washington", "Thomas Jefferson", "Abraham Lincoln", "John F. Kennedy"],
+           answer: "George Washington"
+        },
+        {
+          question:  "Why does the flag have 50 stars?",
+          options: ["The stars represent unity", "There are 50 states", "The stars make the flag look appealing", "None of the above"],
+          answer: "There are 50 states"
+         },
+         {
+          question: " Where is the Statue of Liberty?",
+          options: ["Liberty Island", "Ellis Island", "Union City", "New Jersey"],
+          answer: "Liberty Island"
+         },
+         {
+          question: "When do we celebrate Independence Day?",
+          options: ["July 5", "July 4", "July 14", "June 24"],
+          answer: "July 4"
+         },
+         {
+          question: "Who did the United States fight in World War II?",
+          options: ["Germany", "Russia", "United Kingdom", "China"],
+          answer: "Germany"
+         },
+        ];
+    
+    
+let currentQuestion = 0;
+let score = 0;
+
+function showQuestion() {
+    const question = quizData[currentQuestion];
+    questionElement.innerText = question.question;
+    
+    optionsContainer.innerHTML = "";
+    question.options.forEach(option => {
+        const button = document.createElement("button");
+        button.innerText = option;
+        button.classList.add('option-button');
+        optionsContainer.appendChild(button);
+        button.addEventListener("click", selectAnswer);
+    });
+}
+
+function selectAnswer(e) {
+    const selectedButton = e.target;
+    const answer = quizData[currentQuestion].answer;
+
+    if (selectedButton.innerText === answer) {
+        score++;
+    }
+
+    currentQuestion++;
+
+    if (currentQuestion < quizData.length) {
+        showQuestion();
+    } else {
+        showResult();
+    }
+}
+
+function showResult() {
+    const scorePercentage = (score / quizData.length) * 100;
+    const scoreColor = scorePercentage >= 60 ? 'green' : 'red';
+
+    quiz.innerHTML = `
+          <h1 class="completed"> Quiz Completed! </h1> 
+        <p style="color: ${scoreColor};">Your score: ${score}/${quizData.length} (${scorePercentage.toFixed(2)}%)</p>
+        <p>The exam can be a lot more challenging than it seems. The key to doing well on the real exam is consistent studying. Below are some resources that can help, and they are all free to access and practice using. Good luck!</p>
+        <p> Resources: </p>  
+        <p> Here are some resources to prepare for the US Citizenship Test.</p>
+        <p> <a href= "https://bookstore.gpo.gov/products/preparing-naturalization-test-pocket-study-guidespanish" target="_blank"> Naturalization Test </a></p>
+     <p> <a href= " https://www.uscis.gov/sites/default/files/document/guides/M-1122.pdf" target="_blank"> Preparing for Naturalization Test </a></p>
+     <p> <a href= "https://www.uscis.gov/sites/default/files/document/flash-cards/M-623_red_slides.pdf"target="_blank">Civics Flash Cards </a></p>
+     <p> <a href= "https://www.nypl.org/help/community-outreach/immigrant-services/citizenship" target="_blank"> Test Resources</a></p>
+
+    
+    
+    `;
+}
+
+
+
+showQuestion();
+});
+</script>
+</div>
+</body>
+</html>
